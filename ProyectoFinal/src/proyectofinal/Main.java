@@ -264,6 +264,18 @@ public class Main extends javax.swing.JFrame {
         id_eliminar_partido = new javax.swing.JTextField();
         jButton24 = new javax.swing.JButton();
         jLabel109 = new javax.swing.JLabel();
+        Crear_EquipoJugador = new javax.swing.JDialog();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        id_crear_equipoYjugador = new javax.swing.JTextField();
+        id2_crear_equipoYjugador = new javax.swing.JTextField();
+        jButton25 = new javax.swing.JButton();
+        jLabel104 = new javax.swing.JLabel();
+        reserva_crear_equipoYjugador = new javax.swing.JTextField();
+        eliminar_EquipoJugador = new javax.swing.JDialog();
+        jLabel103 = new javax.swing.JLabel();
+        id_eliminar_equipoYjugador = new javax.swing.JTextField();
+        jButton26 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_Crear = new javax.swing.JMenu();
         jMenuItem_CrearJugador = new javax.swing.JMenuItem();
@@ -273,6 +285,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_CrearEquipo = new javax.swing.JMenuItem();
         jMenuItem_CrearQuiniela = new javax.swing.JMenuItem();
         jMenuItem_CrearPrediccion = new javax.swing.JMenuItem();
+        jMenuItem_crearEquipoJugador = new javax.swing.JMenuItem();
         jMenu_Modificar = new javax.swing.JMenu();
         jMenuItem_ModificarJugador = new javax.swing.JMenuItem();
         jMenuItem_ModificarEntrenador = new javax.swing.JMenuItem();
@@ -281,6 +294,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ModificarEquipo = new javax.swing.JMenuItem();
         jMenuItem_ModificarQuiniela = new javax.swing.JMenuItem();
         jMenuItem_ModificarPrediccion = new javax.swing.JMenuItem();
+        jMenuItem_crearEquipoJugador1 = new javax.swing.JMenuItem();
         jMenu_Eliminar = new javax.swing.JMenu();
         jMenuItem_EliminarJugador = new javax.swing.JMenuItem();
         jMenuItem_EliminarEntrenador = new javax.swing.JMenuItem();
@@ -289,6 +303,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_EliminarEquipo = new javax.swing.JMenuItem();
         jMenuItem_EliminarQuiniela = new javax.swing.JMenuItem();
         jMenuItem_EliminarPrediccion = new javax.swing.JMenuItem();
+        jMenuItem_crearEquipoJugador2 = new javax.swing.JMenuItem();
 
         jLabel1.setText("ID:");
 
@@ -1827,6 +1842,99 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(198, Short.MAX_VALUE))
         );
 
+        jLabel101.setText("id jugador");
+
+        jLabel102.setText("id equipo");
+
+        jButton25.setText("Crear");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+
+        jLabel104.setText("reserva");
+
+        javax.swing.GroupLayout Crear_EquipoJugadorLayout = new javax.swing.GroupLayout(Crear_EquipoJugador.getContentPane());
+        Crear_EquipoJugador.getContentPane().setLayout(Crear_EquipoJugadorLayout);
+        Crear_EquipoJugadorLayout.setHorizontalGroup(
+            Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Crear_EquipoJugadorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(Crear_EquipoJugadorLayout.createSequentialGroup()
+                        .addComponent(jLabel101)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(id_crear_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(Crear_EquipoJugadorLayout.createSequentialGroup()
+                        .addComponent(jLabel102)
+                        .addGap(23, 23, 23)
+                        .addGroup(Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton25)
+                            .addComponent(id2_crear_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(Crear_EquipoJugadorLayout.createSequentialGroup()
+                        .addComponent(jLabel104)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(reserva_crear_equipoYjugador)))
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+        Crear_EquipoJugadorLayout.setVerticalGroup(
+            Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Crear_EquipoJugadorLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel101)
+                    .addComponent(id_crear_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel102)
+                    .addComponent(id2_crear_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Crear_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel104)
+                    .addComponent(reserva_crear_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addComponent(jButton25)
+                .addContainerGap(141, Short.MAX_VALUE))
+        );
+
+        jLabel103.setText("id jugador");
+
+        jButton26.setText("Crear");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eliminar_EquipoJugadorLayout = new javax.swing.GroupLayout(eliminar_EquipoJugador.getContentPane());
+        eliminar_EquipoJugador.getContentPane().setLayout(eliminar_EquipoJugadorLayout);
+        eliminar_EquipoJugadorLayout.setHorizontalGroup(
+            eliminar_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_EquipoJugadorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(eliminar_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminar_EquipoJugadorLayout.createSequentialGroup()
+                        .addComponent(jLabel103)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(id_eliminar_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminar_EquipoJugadorLayout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addComponent(jButton26)))
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+        eliminar_EquipoJugadorLayout.setVerticalGroup(
+            eliminar_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_EquipoJugadorLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addGroup(eliminar_EquipoJugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel103)
+                    .addComponent(id_eliminar_equipoYjugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(52, 52, 52)
+                .addComponent(jButton26)
+                .addContainerGap(175, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu_Crear.setText("Crear");
@@ -1886,6 +1994,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Crear.add(jMenuItem_CrearPrediccion);
+
+        jMenuItem_crearEquipoJugador.setText("Equipo Jugador");
+        jMenuItem_crearEquipoJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_crearEquipoJugadorActionPerformed(evt);
+            }
+        });
+        jMenu_Crear.add(jMenuItem_crearEquipoJugador);
 
         jMenuBar1.add(jMenu_Crear);
 
@@ -1947,6 +2063,14 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu_Modificar.add(jMenuItem_ModificarPrediccion);
 
+        jMenuItem_crearEquipoJugador1.setText("Equipo Jugador");
+        jMenuItem_crearEquipoJugador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_crearEquipoJugador1ActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_crearEquipoJugador1);
+
         jMenuBar1.add(jMenu_Modificar);
 
         jMenu_Eliminar.setText("Eliminar");
@@ -2006,6 +2130,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Eliminar.add(jMenuItem_EliminarPrediccion);
+
+        jMenuItem_crearEquipoJugador2.setText("Equipo Jugador");
+        jMenuItem_crearEquipoJugador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_crearEquipoJugador2ActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_crearEquipoJugador2);
 
         jMenuBar1.add(jMenu_Eliminar);
 
@@ -2112,30 +2244,6 @@ public class Main extends javax.swing.JFrame {
         pesobase_crear_arbitro.setText("");
         pesoextra_crear_arbitro.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jMenuItem_ModificarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarJugadorActionPerformed
-        // TODO add your handling code here:
-        modificar_jugador.setModal(true);
-        modificar_jugador.pack();
-        modificar_jugador.setLocationRelativeTo(this);
-        modificar_jugador.setVisible(true);         
-    }//GEN-LAST:event_jMenuItem_ModificarJugadorActionPerformed
-
-    private void jMenuItem_ModificarEntrenadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEntrenadorActionPerformed
-        // TODO add your handling code here:
-        modificar_entrenador.setModal(true);
-        modificar_entrenador.pack();
-        modificar_entrenador.setLocationRelativeTo(this);
-        modificar_entrenador.setVisible(true); 
-    }//GEN-LAST:event_jMenuItem_ModificarEntrenadorActionPerformed
-
-    private void jMenuItem_ModificarArbitroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarArbitroActionPerformed
-        // TODO add your handling code here:
-        modificar_arbitro.setModal(true);
-        modificar_arbitro.pack();
-        modificar_arbitro.setLocationRelativeTo(this);
-        modificar_arbitro.setVisible(true); 
-    }//GEN-LAST:event_jMenuItem_ModificarArbitroActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
@@ -2265,14 +2373,6 @@ public class Main extends javax.swing.JFrame {
         crear_club.setVisible(true); 
     }//GEN-LAST:event_jMenuItem_CrearClubActionPerformed
 
-    private void jMenuItem_ModificarClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarClubActionPerformed
-        // TODO add your handling code here:
-        modificar_club.setModal(true);
-        modificar_club.pack();
-        modificar_club.setLocationRelativeTo(this);
-        modificar_club.setVisible(true); 
-    }//GEN-LAST:event_jMenuItem_ModificarClubActionPerformed
-
     private void jMenuItem_EliminarClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarClubActionPerformed
         // TODO add your handling code here:
         eliminar_club.setModal(true);
@@ -2329,14 +2429,6 @@ public class Main extends javax.swing.JFrame {
         crear_equipo.setLocationRelativeTo(this);
         crear_equipo.setVisible(true); 
     }//GEN-LAST:event_jMenuItem_CrearEquipoActionPerformed
-
-    private void jMenuItem_ModificarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEquipoActionPerformed
-        // TODO add your handling code here:
-        modificar_equipo.setModal(true);
-        modificar_equipo.pack();
-        modificar_equipo.setLocationRelativeTo(this);
-        modificar_equipo.setVisible(true); 
-    }//GEN-LAST:event_jMenuItem_ModificarEquipoActionPerformed
 
     private void jMenuItem_EliminarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarEquipoActionPerformed
         // TODO add your handling code here:
@@ -2397,14 +2489,6 @@ public class Main extends javax.swing.JFrame {
         crear_quiniela.setLocationRelativeTo(this);
         crear_quiniela.setVisible(true);        
     }//GEN-LAST:event_jMenuItem_CrearQuinielaActionPerformed
-
-    private void jMenuItem_ModificarQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarQuinielaActionPerformed
-        // TODO add your handling code here:
-        modificar_quiniela.setModal(true);
-        modificar_quiniela.pack();
-        modificar_quiniela.setLocationRelativeTo(this);
-        modificar_quiniela.setVisible(true);       
-    }//GEN-LAST:event_jMenuItem_ModificarQuinielaActionPerformed
 
     private void jMenuItem_EliminarQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarQuinielaActionPerformed
         // TODO add your handling code here:
@@ -2528,14 +2612,6 @@ public class Main extends javax.swing.JFrame {
         crear_prediccion.setVisible(true);    
     }//GEN-LAST:event_jMenuItem_CrearPrediccionActionPerformed
 
-    private void jMenuItem_ModificarPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarPrediccionActionPerformed
-        // TODO add your handling code here:
-        modificar_prediccion.setModal(true);
-        modificar_prediccion.pack();
-        modificar_prediccion.setLocationRelativeTo(this);
-        modificar_prediccion.setVisible(true);    
-    }//GEN-LAST:event_jMenuItem_ModificarPrediccionActionPerformed
-
     private void jMenuItem_EliminarPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarPrediccionActionPerformed
         // TODO add your handling code here:
         eliminar_prediccion.setModal(true);
@@ -2617,6 +2693,111 @@ public class Main extends javax.swing.JFrame {
         id_eliminar_partido.setText("");
     }//GEN-LAST:event_jButton24ActionPerformed
 
+    private void jMenuItem_crearEquipoJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_crearEquipoJugadorActionPerformed
+        // TODO add your handling code here:
+        Crear_EquipoJugador.setModal(true);
+        Crear_EquipoJugador.pack();
+        Crear_EquipoJugador.setLocationRelativeTo(this);
+        Crear_EquipoJugador.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_crearEquipoJugadorActionPerformed
+
+    private void jMenuItem_crearEquipoJugador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_crearEquipoJugador1ActionPerformed
+        // TODO add your handling code here:
+        eliminar_EquipoJugador.setModal(true);
+        eliminar_EquipoJugador.pack();
+        eliminar_EquipoJugador.setLocationRelativeTo(this);
+        eliminar_EquipoJugador.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_crearEquipoJugador1ActionPerformed
+
+    private void jMenuItem_ModificarPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarPrediccionActionPerformed
+        // TODO add your handling code here:
+        modificar_prediccion.setModal(true);
+        modificar_prediccion.pack();
+        modificar_prediccion.setLocationRelativeTo(this);
+        modificar_prediccion.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarPrediccionActionPerformed
+
+    private void jMenuItem_ModificarQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarQuinielaActionPerformed
+        // TODO add your handling code here:
+        modificar_quiniela.setModal(true);
+        modificar_quiniela.pack();
+        modificar_quiniela.setLocationRelativeTo(this);
+        modificar_quiniela.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarQuinielaActionPerformed
+
+    private void jMenuItem_ModificarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEquipoActionPerformed
+        // TODO add your handling code here:
+        modificar_equipo.setModal(true);
+        modificar_equipo.pack();
+        modificar_equipo.setLocationRelativeTo(this);
+        modificar_equipo.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarEquipoActionPerformed
+
+    private void jMenuItem_ModificarClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarClubActionPerformed
+        // TODO add your handling code here:
+        modificar_club.setModal(true);
+        modificar_club.pack();
+        modificar_club.setLocationRelativeTo(this);
+        modificar_club.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarClubActionPerformed
+
+    private void jMenuItem_ModificarArbitroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarArbitroActionPerformed
+        // TODO add your handling code here:
+        modificar_arbitro.setModal(true);
+        modificar_arbitro.pack();
+        modificar_arbitro.setLocationRelativeTo(this);
+        modificar_arbitro.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarArbitroActionPerformed
+
+    private void jMenuItem_ModificarEntrenadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEntrenadorActionPerformed
+        // TODO add your handling code here:
+        modificar_entrenador.setModal(true);
+        modificar_entrenador.pack();
+        modificar_entrenador.setLocationRelativeTo(this);
+        modificar_entrenador.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarEntrenadorActionPerformed
+
+    private void jMenuItem_ModificarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarJugadorActionPerformed
+        // TODO add your handling code here:
+        modificar_jugador.setModal(true);
+        modificar_jugador.pack();
+        modificar_jugador.setLocationRelativeTo(this);
+        modificar_jugador.setVisible(true);
+    }//GEN-LAST:event_jMenuItem_ModificarJugadorActionPerformed
+
+    private void jMenuItem_crearEquipoJugador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_crearEquipoJugador2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem_crearEquipoJugador2ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        String id1, id2,reserva;
+        id1 = id_crear_equipoYjugador.getText();
+        id2 = id2_crear_equipoYjugador.getText();
+        reserva = reserva_crear_equipoYjugador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into equipo_jugador(id_equipo,id_jugador,reserva)" + 
+                "values (" + Integer.parseInt(id1) + ", '" + Integer.parseInt(id2) + "',"+reserva+");");
+        finalizarConexion();
+        id2_crear_equipoYjugador.setText("");
+        id_crear_equipoYjugador.setText("");
+        reserva_crear_equipoYjugador.setText("");
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_equipoYjugador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from equipo_jugador " + 
+                "where id_jugador=" + Integer.parseInt(id) + ");");
+        finalizarConexion();
+        id_eliminar_equipoYjugador.setText("");
+    }//GEN-LAST:event_jButton26ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2653,6 +2834,7 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Crear_EquipoJugador;
     private javax.swing.JDialog crear_arbitro;
     private javax.swing.JDialog crear_club;
     private javax.swing.JDialog crear_entrenador;
@@ -2661,6 +2843,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog crear_partido;
     private javax.swing.JDialog crear_prediccion;
     private javax.swing.JDialog crear_quiniela;
+    private javax.swing.JDialog eliminar_EquipoJugador;
     private javax.swing.JDialog eliminar_arbitro;
     private javax.swing.JDialog eliminar_club;
     private javax.swing.JDialog eliminar_entrenador;
@@ -2685,6 +2868,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField goles_local_modificar_partido;
     private javax.swing.JTextField goles_visita_crear_partido;
     private javax.swing.JTextField goles_visita_modificar_partido;
+    private javax.swing.JTextField id2_crear_equipoYjugador;
     private javax.swing.JTextField id_arbitro_crear_partido;
     private javax.swing.JTextField id_arbitro_modificar_partido;
     private javax.swing.JTextField id_auxiliar2_crear_partido;
@@ -2695,6 +2879,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_crear_club;
     private javax.swing.JTextField id_crear_entrenador;
     private javax.swing.JTextField id_crear_equipo;
+    private javax.swing.JTextField id_crear_equipoYjugador;
     private javax.swing.JTextField id_crear_jugador;
     private javax.swing.JTextField id_crear_partido;
     private javax.swing.JTextField id_crear_prediccion;
@@ -2703,6 +2888,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_eliminar_club;
     private javax.swing.JTextField id_eliminar_entrenador;
     private javax.swing.JTextField id_eliminar_equipo;
+    private javax.swing.JTextField id_eliminar_equipoYjugador;
     private javax.swing.JTextField id_eliminar_jugador;
     private javax.swing.JTextField id_eliminar_partido;
     private javax.swing.JTextField id_eliminar_prediccion;
@@ -2744,6 +2930,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -2754,6 +2942,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -2874,6 +3066,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem_ModificarJugador;
     private javax.swing.JMenuItem jMenuItem_ModificarPrediccion;
     private javax.swing.JMenuItem jMenuItem_ModificarQuiniela;
+    private javax.swing.JMenuItem jMenuItem_crearEquipoJugador;
+    private javax.swing.JMenuItem jMenuItem_crearEquipoJugador1;
+    private javax.swing.JMenuItem jMenuItem_crearEquipoJugador2;
     private javax.swing.JMenu jMenu_Crear;
     private javax.swing.JMenu jMenu_Eliminar;
     private javax.swing.JMenu jMenu_Modificar;
@@ -2911,6 +3106,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField pesoextra_modificar_arbitro;
     private javax.swing.JTextField pesoextra_modificar_entrenador;
     private javax.swing.JTextField pesoextra_modificar_jugador;
+    private javax.swing.JTextField reserva_crear_equipoYjugador;
     private javax.swing.JTextField visita_crear_prediccion;
     private javax.swing.JTextField visita_modificar_prediccion;
     // End of variables declaration//GEN-END:variables
