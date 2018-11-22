@@ -63,13 +63,97 @@ public class Main extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         nombre_crear_arbitro = new javax.swing.JTextField();
         fechanac_crear_arbitro = new javax.swing.JTextField();
+        modificar_jugador = new javax.swing.JDialog();
+        jButton4 = new javax.swing.JButton();
+        id_modificar_jugador = new javax.swing.JTextField();
+        nombre_modificar_jugador = new javax.swing.JTextField();
+        fechanac_modificar_jugador = new javax.swing.JTextField();
+        pesobase_modificar_jugador = new javax.swing.JTextField();
+        pesoextra_modificar_jugador = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        modificar_entrenador = new javax.swing.JDialog();
+        jButton5 = new javax.swing.JButton();
+        id_modificar_entrenador = new javax.swing.JTextField();
+        nombre_modificar_entrenador = new javax.swing.JTextField();
+        fechanac_modificar_entrenador = new javax.swing.JTextField();
+        pesobase_modificar_entrenador = new javax.swing.JTextField();
+        pesoextra_modificar_entrenador = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        modificar_arbitro = new javax.swing.JDialog();
+        jButton6 = new javax.swing.JButton();
+        id_modificar_arbitro = new javax.swing.JTextField();
+        nombre_modificar_arbitro = new javax.swing.JTextField();
+        fechanac_modificar_arbitro = new javax.swing.JTextField();
+        pesobase_modificar_arbitro = new javax.swing.JTextField();
+        pesoextra_modificar_arbitro = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        eliminar_jugador = new javax.swing.JDialog();
+        id_eliminar_jugador = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
+        eliminar_entrenador = new javax.swing.JDialog();
+        id_eliminar_entrenador = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        eliminar_arbitro = new javax.swing.JDialog();
+        id_eliminar_arbitro = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jLabel42 = new javax.swing.JLabel();
+        crear_club = new javax.swing.JDialog();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        id_crear_club = new javax.swing.JTextField();
+        nombre_crear_club = new javax.swing.JTextField();
+        jButton10 = new javax.swing.JButton();
+        modificar_club = new javax.swing.JDialog();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        id_modificar_club = new javax.swing.JTextField();
+        nombre_modificar_club = new javax.swing.JTextField();
+        jButton11 = new javax.swing.JButton();
+        jLabel47 = new javax.swing.JLabel();
+        eliminar_club = new javax.swing.JDialog();
+        id_eliminar_club = new javax.swing.JTextField();
+        jButton12 = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_Crear = new javax.swing.JMenu();
         jMenuItem_CrearJugador = new javax.swing.JMenuItem();
         jMenuItem_CrearEntrenador = new javax.swing.JMenuItem();
         jMenuItem_CrearArbitro = new javax.swing.JMenuItem();
+        jMenuItem_CrearClub = new javax.swing.JMenuItem();
         jMenu_Modificar = new javax.swing.JMenu();
+        jMenuItem_ModificarJugador = new javax.swing.JMenuItem();
+        jMenuItem_ModificarEntrenador = new javax.swing.JMenuItem();
+        jMenuItem_ModificarArbitro = new javax.swing.JMenuItem();
+        jMenuItem_ModificarClub = new javax.swing.JMenuItem();
         jMenu_Eliminar = new javax.swing.JMenu();
+        jMenuItem_EliminarJugador = new javax.swing.JMenuItem();
+        jMenuItem_EliminarEntrenador = new javax.swing.JMenuItem();
+        jMenuItem_EliminarArbitro = new javax.swing.JMenuItem();
+        jMenuItem_EliminarClub = new javax.swing.JMenuItem();
         jMenu_Listar = new javax.swing.JMenu();
 
         jLabel1.setText("ID:");
@@ -285,6 +369,530 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(104, Short.MAX_VALUE))
         );
 
+        jButton4.setText("Modificar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel16.setText("ID:");
+
+        jLabel17.setText("Nombre:");
+
+        jLabel18.setText("Fecha Nacimiento:");
+
+        jLabel19.setText("Peso base:");
+
+        jLabel20.setText("Peso extra:");
+
+        jLabel21.setText("Para poder modificar exitosamente ingrese el ID del jugador a modificar");
+
+        jLabel22.setText("e ingrese en los campos SOLAMENTE los datos que van a ser modificados");
+
+        javax.swing.GroupLayout modificar_jugadorLayout = new javax.swing.GroupLayout(modificar_jugador.getContentPane());
+        modificar_jugador.getContentPane().setLayout(modificar_jugadorLayout);
+        modificar_jugadorLayout.setHorizontalGroup(
+            modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_jugadorLayout.createSequentialGroup()
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_jugadorLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel21)))
+                    .addGroup(modificar_jugadorLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel20))
+                        .addGap(30, 30, 30)
+                        .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pesoextra_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pesobase_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fechanac_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_jugadorLayout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jButton4)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        modificar_jugadorLayout.setVerticalGroup(
+            modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_jugadorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombre_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fechanac_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesobase_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel19))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesoextra_modificar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20))
+                .addGap(18, 18, 18)
+                .addComponent(jButton4)
+                .addGap(29, 29, 29))
+        );
+
+        jButton5.setText("Modificar");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel23.setText("ID:");
+
+        jLabel24.setText("Nombre:");
+
+        jLabel25.setText("Fecha Nacimiento:");
+
+        jLabel26.setText("Peso base:");
+
+        jLabel27.setText("Peso extra:");
+
+        jLabel28.setText("Para poder modificar exitosamente ingrese el ID del entrenador a modificar");
+
+        jLabel29.setText("e ingrese en los campos SOLAMENTE los datos que van a ser modificados");
+
+        javax.swing.GroupLayout modificar_entrenadorLayout = new javax.swing.GroupLayout(modificar_entrenador.getContentPane());
+        modificar_entrenador.getContentPane().setLayout(modificar_entrenadorLayout);
+        modificar_entrenadorLayout.setHorizontalGroup(
+            modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_entrenadorLayout.createSequentialGroup()
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_entrenadorLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel29)
+                            .addComponent(jLabel28)))
+                    .addGroup(modificar_entrenadorLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel27))
+                        .addGap(30, 30, 30)
+                        .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pesoextra_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pesobase_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fechanac_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_entrenadorLayout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jButton5)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        modificar_entrenadorLayout.setVerticalGroup(
+            modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_entrenadorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombre_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fechanac_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesobase_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesoextra_modificar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel27))
+                .addGap(18, 18, 18)
+                .addComponent(jButton5)
+                .addGap(29, 29, 29))
+        );
+
+        jButton6.setText("Modificar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jLabel30.setText("ID:");
+
+        jLabel31.setText("Nombre:");
+
+        jLabel32.setText("Fecha Nacimiento:");
+
+        jLabel33.setText("Peso base:");
+
+        jLabel34.setText("Peso extra:");
+
+        jLabel35.setText("Para poder modificar exitosamente ingrese el ID del arbitro a modificar");
+
+        jLabel36.setText("e ingrese en los campos SOLAMENTE los datos que van a ser modificados");
+
+        javax.swing.GroupLayout modificar_arbitroLayout = new javax.swing.GroupLayout(modificar_arbitro.getContentPane());
+        modificar_arbitro.getContentPane().setLayout(modificar_arbitroLayout);
+        modificar_arbitroLayout.setHorizontalGroup(
+            modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_arbitroLayout.createSequentialGroup()
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_arbitroLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel35)))
+                    .addGroup(modificar_arbitroLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel30)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel32)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel34))
+                        .addGap(30, 30, 30)
+                        .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pesoextra_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pesobase_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fechanac_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_arbitroLayout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jButton6)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        modificar_arbitroLayout.setVerticalGroup(
+            modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_arbitroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nombre_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel31))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(fechanac_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesobase_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pesoextra_modificar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel34))
+                .addGap(18, 18, 18)
+                .addComponent(jButton6)
+                .addGap(29, 29, 29))
+        );
+
+        jLabel37.setText("ID:");
+
+        jButton7.setText("Eliminar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jLabel38.setText("Ingrese el ID del jugador a borrar");
+
+        javax.swing.GroupLayout eliminar_jugadorLayout = new javax.swing.GroupLayout(eliminar_jugador.getContentPane());
+        eliminar_jugador.getContentPane().setLayout(eliminar_jugadorLayout);
+        eliminar_jugadorLayout.setHorizontalGroup(
+            eliminar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_jugadorLayout.createSequentialGroup()
+                .addGap(106, 106, 106)
+                .addGroup(eliminar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel38)
+                    .addGroup(eliminar_jugadorLayout.createSequentialGroup()
+                        .addComponent(jLabel37)
+                        .addGap(30, 30, 30)
+                        .addGroup(eliminar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton7)
+                            .addComponent(id_eliminar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(129, Short.MAX_VALUE))
+        );
+        eliminar_jugadorLayout.setVerticalGroup(
+            eliminar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_jugadorLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel38)
+                .addGap(18, 18, 18)
+                .addGroup(eliminar_jugadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_eliminar_jugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37))
+                .addGap(18, 18, 18)
+                .addComponent(jButton7)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jLabel39.setText("ID:");
+
+        jButton8.setText("Eliminar");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jLabel40.setText("Ingrese el ID del entrenador a borrar");
+
+        javax.swing.GroupLayout eliminar_entrenadorLayout = new javax.swing.GroupLayout(eliminar_entrenador.getContentPane());
+        eliminar_entrenador.getContentPane().setLayout(eliminar_entrenadorLayout);
+        eliminar_entrenadorLayout.setHorizontalGroup(
+            eliminar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_entrenadorLayout.createSequentialGroup()
+                .addGap(106, 106, 106)
+                .addGroup(eliminar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel40)
+                    .addGroup(eliminar_entrenadorLayout.createSequentialGroup()
+                        .addComponent(jLabel39)
+                        .addGap(30, 30, 30)
+                        .addGroup(eliminar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton8)
+                            .addComponent(id_eliminar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+        eliminar_entrenadorLayout.setVerticalGroup(
+            eliminar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_entrenadorLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel40)
+                .addGap(18, 18, 18)
+                .addGroup(eliminar_entrenadorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_eliminar_entrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel39))
+                .addGap(18, 18, 18)
+                .addComponent(jButton8)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jLabel41.setText("ID:");
+
+        jButton9.setText("Eliminar");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jLabel42.setText("Ingrese el ID del arbitro a borrar");
+
+        javax.swing.GroupLayout eliminar_arbitroLayout = new javax.swing.GroupLayout(eliminar_arbitro.getContentPane());
+        eliminar_arbitro.getContentPane().setLayout(eliminar_arbitroLayout);
+        eliminar_arbitroLayout.setHorizontalGroup(
+            eliminar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_arbitroLayout.createSequentialGroup()
+                .addGap(106, 106, 106)
+                .addGroup(eliminar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel42)
+                    .addGroup(eliminar_arbitroLayout.createSequentialGroup()
+                        .addComponent(jLabel41)
+                        .addGap(30, 30, 30)
+                        .addGroup(eliminar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton9)
+                            .addComponent(id_eliminar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(129, Short.MAX_VALUE))
+        );
+        eliminar_arbitroLayout.setVerticalGroup(
+            eliminar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_arbitroLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel42)
+                .addGap(18, 18, 18)
+                .addGroup(eliminar_arbitroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(id_eliminar_arbitro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel41))
+                .addGap(18, 18, 18)
+                .addComponent(jButton9)
+                .addContainerGap(187, Short.MAX_VALUE))
+        );
+
+        jLabel43.setText("ID:");
+
+        jLabel44.setText("Nombre:");
+
+        jButton10.setText("Crear");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crear_clubLayout = new javax.swing.GroupLayout(crear_club.getContentPane());
+        crear_club.getContentPane().setLayout(crear_clubLayout);
+        crear_clubLayout.setHorizontalGroup(
+            crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_clubLayout.createSequentialGroup()
+                .addGroup(crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_clubLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(crear_clubLayout.createSequentialGroup()
+                                .addComponent(jLabel43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(id_crear_club, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(crear_clubLayout.createSequentialGroup()
+                                .addComponent(jLabel44)
+                                .addGap(18, 18, 18)
+                                .addComponent(nombre_crear_club, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(crear_clubLayout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(jButton10)))
+                .addContainerGap(211, Short.MAX_VALUE))
+        );
+        crear_clubLayout.setVerticalGroup(
+            crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_clubLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43)
+                    .addComponent(id_crear_club, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel44)
+                    .addComponent(nombre_crear_club, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton10)
+                .addContainerGap(161, Short.MAX_VALUE))
+        );
+
+        jLabel45.setText("ID:");
+
+        jLabel46.setText("Nombre:");
+
+        jButton11.setText("Modificar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
+        jLabel47.setText("Ingrese el ID del club que va a modificar");
+
+        javax.swing.GroupLayout modificar_clubLayout = new javax.swing.GroupLayout(modificar_club.getContentPane());
+        modificar_club.getContentPane().setLayout(modificar_clubLayout);
+        modificar_clubLayout.setHorizontalGroup(
+            modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_clubLayout.createSequentialGroup()
+                .addGroup(modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_clubLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(modificar_clubLayout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(id_modificar_club, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(modificar_clubLayout.createSequentialGroup()
+                                .addComponent(jLabel46)
+                                .addGap(18, 18, 18)
+                                .addComponent(nombre_modificar_club, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(modificar_clubLayout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(jButton11))
+                    .addGroup(modificar_clubLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel47)))
+                .addContainerGap(198, Short.MAX_VALUE))
+        );
+        modificar_clubLayout.setVerticalGroup(
+            modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_clubLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel47)
+                .addGap(15, 15, 15)
+                .addGroup(modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel45)
+                    .addComponent(id_modificar_club, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel46)
+                    .addComponent(nombre_modificar_club, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton11)
+                .addContainerGap(161, Short.MAX_VALUE))
+        );
+
+        jButton12.setText("Eliminar");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+
+        jLabel49.setText("Ingrese el ID del club que va a eliminiar");
+
+        jLabel50.setText("ID:");
+
+        javax.swing.GroupLayout eliminar_clubLayout = new javax.swing.GroupLayout(eliminar_club.getContentPane());
+        eliminar_club.getContentPane().setLayout(eliminar_clubLayout);
+        eliminar_clubLayout.setHorizontalGroup(
+            eliminar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_clubLayout.createSequentialGroup()
+                .addGroup(eliminar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminar_clubLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel50)
+                        .addGap(44, 44, 44)
+                        .addComponent(id_eliminar_club, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminar_clubLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel49))
+                    .addGroup(eliminar_clubLayout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jButton12)))
+                .addContainerGap(203, Short.MAX_VALUE))
+        );
+        eliminar_clubLayout.setVerticalGroup(
+            eliminar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_clubLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel49)
+                .addGap(15, 15, 15)
+                .addGroup(eliminar_clubLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel50)
+                    .addComponent(id_eliminar_club, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton12)
+                .addContainerGap(199, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu_Crear.setText("Crear");
@@ -313,12 +921,86 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu_Crear.add(jMenuItem_CrearArbitro);
 
+        jMenuItem_CrearClub.setText("Club");
+        jMenuItem_CrearClub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_CrearClubActionPerformed(evt);
+            }
+        });
+        jMenu_Crear.add(jMenuItem_CrearClub);
+
         jMenuBar1.add(jMenu_Crear);
 
         jMenu_Modificar.setText("Modificar");
+
+        jMenuItem_ModificarJugador.setText("Jugador");
+        jMenuItem_ModificarJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarJugadorActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarJugador);
+
+        jMenuItem_ModificarEntrenador.setText("Entrenador");
+        jMenuItem_ModificarEntrenador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarEntrenadorActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarEntrenador);
+
+        jMenuItem_ModificarArbitro.setText("Arbitro");
+        jMenuItem_ModificarArbitro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarArbitroActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarArbitro);
+
+        jMenuItem_ModificarClub.setText("Club");
+        jMenuItem_ModificarClub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarClubActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarClub);
+
         jMenuBar1.add(jMenu_Modificar);
 
         jMenu_Eliminar.setText("Eliminar");
+
+        jMenuItem_EliminarJugador.setText("Jugador");
+        jMenuItem_EliminarJugador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarJugadorActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarJugador);
+
+        jMenuItem_EliminarEntrenador.setText("Entrenador");
+        jMenuItem_EliminarEntrenador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarEntrenadorActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarEntrenador);
+
+        jMenuItem_EliminarArbitro.setText("Arbitro");
+        jMenuItem_EliminarArbitro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarArbitroActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarArbitro);
+
+        jMenuItem_EliminarClub.setText("Club");
+        jMenuItem_EliminarClub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarClubActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarClub);
+
         jMenuBar1.add(jMenu_Eliminar);
 
         jMenu_Listar.setText("Listar");
@@ -410,6 +1092,166 @@ public class Main extends javax.swing.JFrame {
         pesoextra_crear_arbitro.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jMenuItem_ModificarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarJugadorActionPerformed
+        // TODO add your handling code here:
+        modificar_jugador.setModal(true);
+        modificar_jugador.pack();
+        modificar_jugador.setLocationRelativeTo(this);
+        modificar_jugador.setVisible(true);         
+    }//GEN-LAST:event_jMenuItem_ModificarJugadorActionPerformed
+
+    private void jMenuItem_ModificarEntrenadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEntrenadorActionPerformed
+        // TODO add your handling code here:
+        modificar_entrenador.setModal(true);
+        modificar_entrenador.pack();
+        modificar_entrenador.setLocationRelativeTo(this);
+        modificar_entrenador.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_ModificarEntrenadorActionPerformed
+
+    private void jMenuItem_ModificarArbitroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarArbitroActionPerformed
+        // TODO add your handling code here:
+        modificar_arbitro.setModal(true);
+        modificar_arbitro.pack();
+        modificar_arbitro.setLocationRelativeTo(this);
+        modificar_arbitro.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_ModificarArbitroActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        String id,fecha,nombre,pesobase,pesoextra;
+        id = id_modificar_jugador.getText();
+        fecha = fechanac_modificar_jugador.getText();
+        nombre = nombre_modificar_jugador.getText();
+        pesobase = pesobase_modificar_jugador.getText();
+        pesoextra = pesoextra_modificar_jugador.getText();
+        id_modificar_jugador.setText("");
+        fechanac_modificar_jugador.setText("");
+        nombre_modificar_jugador.setText("");
+        pesobase_modificar_jugador.setText("");
+        pesoextra_modificar_jugador.setText("");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        String id,fecha,nombre,pesobase,pesoextra;
+        id = id_modificar_entrenador.getText();
+        fecha = fechanac_modificar_entrenador.getText();
+        nombre = nombre_modificar_entrenador.getText();
+        pesobase = pesobase_modificar_entrenador.getText();
+        pesoextra = pesoextra_modificar_entrenador.getText();
+        id_modificar_entrenador.setText("");
+        fechanac_modificar_entrenador.setText("");
+        nombre_modificar_entrenador.setText("");
+        pesobase_modificar_entrenador.setText("");
+        pesoextra_modificar_entrenador.setText("");
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        String id,fecha,nombre,pesobase,pesoextra;
+        id = id_modificar_arbitro.getText();
+        fecha = fechanac_modificar_arbitro.getText();
+        nombre = nombre_modificar_arbitro.getText();
+        pesobase = pesobase_modificar_arbitro.getText();
+        pesoextra = pesoextra_modificar_arbitro.getText();
+        id_modificar_arbitro.setText("");
+        fechanac_modificar_arbitro.setText("");
+        nombre_modificar_arbitro.setText("");
+        pesobase_modificar_arbitro.setText("");
+        pesoextra_modificar_arbitro.setText("");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_jugador.getText();
+        id_eliminar_jugador.setText("");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_entrenador.getText();
+        id_eliminar_entrenador.setText("");
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_arbitro.getText();
+        id_eliminar_arbitro.setText("");
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jMenuItem_EliminarJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarJugadorActionPerformed
+        // TODO add your handling code here:
+        eliminar_jugador.setModal(true);
+        eliminar_jugador.pack();
+        eliminar_jugador.setLocationRelativeTo(this);
+        eliminar_jugador.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_EliminarJugadorActionPerformed
+
+    private void jMenuItem_EliminarEntrenadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarEntrenadorActionPerformed
+        // TODO add your handling code here:
+        eliminar_entrenador.setModal(true);
+        eliminar_entrenador.pack();
+        eliminar_entrenador.setLocationRelativeTo(this);
+        eliminar_entrenador.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_EliminarEntrenadorActionPerformed
+
+    private void jMenuItem_EliminarArbitroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarArbitroActionPerformed
+        // TODO add your handling code here:
+        eliminar_arbitro.setModal(true);
+        eliminar_arbitro.pack();
+        eliminar_arbitro.setLocationRelativeTo(this);
+        eliminar_arbitro.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_EliminarArbitroActionPerformed
+
+    private void jMenuItem_CrearClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_CrearClubActionPerformed
+        // TODO add your handling code here:
+        crear_club.setModal(true);
+        crear_club.pack();
+        crear_club.setLocationRelativeTo(this);
+        crear_club.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_CrearClubActionPerformed
+
+    private void jMenuItem_ModificarClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarClubActionPerformed
+        // TODO add your handling code here:
+        modificar_club.setModal(true);
+        modificar_club.pack();
+        modificar_club.setLocationRelativeTo(this);
+        modificar_club.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_ModificarClubActionPerformed
+
+    private void jMenuItem_EliminarClubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarClubActionPerformed
+        // TODO add your handling code here:
+        eliminar_club.setModal(true);
+        eliminar_club.pack();
+        eliminar_club.setLocationRelativeTo(this);
+        eliminar_club.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_EliminarClubActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        String id,nombre;
+        id = id_crear_club.getText();
+        nombre = nombre_crear_club.getText();
+        id_crear_club.setText("");
+        nombre_crear_club.setText("");
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        String id,nombre;
+        id = id_modificar_club.getText();
+        nombre = nombre_modificar_club.getText();
+        id_modificar_club.setText("");
+        nombre_modificar_club.setText("");
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        String id;
+        id = id_eliminar_club.getText();
+        id_modificar_club.setText("");
+    }//GEN-LAST:event_jButton12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -447,17 +1289,43 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog crear_arbitro;
+    private javax.swing.JDialog crear_club;
     private javax.swing.JDialog crear_entrenador;
     private javax.swing.JDialog crear_jugador;
+    private javax.swing.JDialog eliminar_arbitro;
+    private javax.swing.JDialog eliminar_club;
+    private javax.swing.JDialog eliminar_entrenador;
+    private javax.swing.JDialog eliminar_jugador;
     private javax.swing.JTextField fechanac_crear_arbitro;
     private javax.swing.JTextField fechanac_crear_entrenador;
     private javax.swing.JTextField fechanac_crear_jugador;
+    private javax.swing.JTextField fechanac_modificar_arbitro;
+    private javax.swing.JTextField fechanac_modificar_entrenador;
+    private javax.swing.JTextField fechanac_modificar_jugador;
     private javax.swing.JTextField id_crear_arbitro;
+    private javax.swing.JTextField id_crear_club;
     private javax.swing.JTextField id_crear_entrenador;
     private javax.swing.JTextField id_crear_jugador;
+    private javax.swing.JTextField id_eliminar_arbitro;
+    private javax.swing.JTextField id_eliminar_club;
+    private javax.swing.JTextField id_eliminar_entrenador;
+    private javax.swing.JTextField id_eliminar_jugador;
+    private javax.swing.JTextField id_modificar_arbitro;
+    private javax.swing.JTextField id_modificar_club;
+    private javax.swing.JTextField id_modificar_entrenador;
+    private javax.swing.JTextField id_modificar_jugador;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -465,30 +1333,88 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem_CrearArbitro;
+    private javax.swing.JMenuItem jMenuItem_CrearClub;
     private javax.swing.JMenuItem jMenuItem_CrearEntrenador;
     private javax.swing.JMenuItem jMenuItem_CrearJugador;
+    private javax.swing.JMenuItem jMenuItem_EliminarArbitro;
+    private javax.swing.JMenuItem jMenuItem_EliminarClub;
+    private javax.swing.JMenuItem jMenuItem_EliminarEntrenador;
+    private javax.swing.JMenuItem jMenuItem_EliminarJugador;
+    private javax.swing.JMenuItem jMenuItem_ModificarArbitro;
+    private javax.swing.JMenuItem jMenuItem_ModificarClub;
+    private javax.swing.JMenuItem jMenuItem_ModificarEntrenador;
+    private javax.swing.JMenuItem jMenuItem_ModificarJugador;
     private javax.swing.JMenu jMenu_Crear;
     private javax.swing.JMenu jMenu_Eliminar;
     private javax.swing.JMenu jMenu_Listar;
     private javax.swing.JMenu jMenu_Modificar;
+    private javax.swing.JDialog modificar_arbitro;
+    private javax.swing.JDialog modificar_club;
+    private javax.swing.JDialog modificar_entrenador;
+    private javax.swing.JDialog modificar_jugador;
     private javax.swing.JTextField nombre_crear_arbitro;
+    private javax.swing.JTextField nombre_crear_club;
     private javax.swing.JTextField nombre_crear_entrenador;
     private javax.swing.JTextField nombre_crear_jugador;
+    private javax.swing.JTextField nombre_modificar_arbitro;
+    private javax.swing.JTextField nombre_modificar_club;
+    private javax.swing.JTextField nombre_modificar_entrenador;
+    private javax.swing.JTextField nombre_modificar_jugador;
     private javax.swing.JTextField pesobase_crear_arbitro;
     private javax.swing.JTextField pesobase_crear_entrenador;
     private javax.swing.JTextField pesobase_crear_jugador;
+    private javax.swing.JTextField pesobase_modificar_arbitro;
+    private javax.swing.JTextField pesobase_modificar_entrenador;
+    private javax.swing.JTextField pesobase_modificar_jugador;
     private javax.swing.JTextField pesoextra_crear_arbitro;
     private javax.swing.JTextField pesoextra_crear_entrenador;
     private javax.swing.JTextField pesoextra_crear_jugador;
+    private javax.swing.JTextField pesoextra_modificar_arbitro;
+    private javax.swing.JTextField pesoextra_modificar_entrenador;
+    private javax.swing.JTextField pesoextra_modificar_jugador;
     // End of variables declaration//GEN-END:variables
 }
