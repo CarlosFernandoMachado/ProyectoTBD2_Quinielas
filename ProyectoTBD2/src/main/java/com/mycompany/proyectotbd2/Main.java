@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package com.mycompany.proyectotbd2;
-
+import static com.mycompany.proyectotbd2.CQL_Operaciones.IniciarConexion;
+import static com.mycompany.proyectotbd2.CQL_Operaciones.IniciarSession;
+import static com.mycompany.proyectotbd2.CQL_Operaciones.finalizarConexion;
 /**
  *
  * @author Machado

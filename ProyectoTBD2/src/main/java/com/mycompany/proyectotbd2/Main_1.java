@@ -2,9 +2,9 @@
 package com.mycompany.proyectotbd2;
 
 import javax.swing.JOptionPane;
-import static quiniela.CQL_Operaciones.IniciarConexion;
-import static quiniela.CQL_Operaciones.IniciarSession;
-import static quiniela.CQL_Operaciones.finalizarConexion;
+import static com.mycompany.proyectotbd2.CQL_Operaciones.IniciarConexion;
+import static com.mycompany.proyectotbd2.CQL_Operaciones.IniciarSession;
+import static com.mycompany.proyectotbd2.CQL_Operaciones.finalizarConexion;
 
 /**
  *
