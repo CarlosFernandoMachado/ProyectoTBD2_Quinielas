@@ -289,7 +289,6 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_EliminarEquipo = new javax.swing.JMenuItem();
         jMenuItem_EliminarQuiniela = new javax.swing.JMenuItem();
         jMenuItem_EliminarPrediccion = new javax.swing.JMenuItem();
-        jMenu_Listar = new javax.swing.JMenu();
 
         jLabel1.setText("ID:");
 
@@ -2010,9 +2009,6 @@ public class Main extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu_Eliminar);
 
-        jMenu_Listar.setText("Listar");
-        jMenuBar1.add(jMenu_Listar);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2479,6 +2475,12 @@ public class Main extends javax.swing.JFrame {
         monto = monto_crear_prediccion.getText();
         local = local_crear_prediccion.getText();
         visita = visita_crear_prediccion.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into predicciones(id_prediccion,id_partido,monto,goles_local,goles_visita)" + 
+                "values (" + Integer.parseInt(id) + ", " + Integer.parseInt(idpartido) + ", "+Integer.parseInt(monto)+","+Integer.parseInt(local)+","+Integer.parseInt(visita)+");");
+        finalizarConexion();
         id_crear_prediccion.setText("");
         idpartido_crear_prediccion.setText("");
         monto_crear_prediccion.setText("");
@@ -2494,6 +2496,12 @@ public class Main extends javax.swing.JFrame {
         monto = monto_modificar_prediccion.getText();
         local = local_modificar_prediccion.getText();
         visita = visita_modificar_prediccion.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update predicciones set id_partido="+Integer.parseInt(idpartido)+",monto="+Integer.parseInt(monto)+",goles_local="+Integer.parseInt(local)
+                +",goles_visita="+Integer.parseInt(visita)+" where id_prediccion="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_prediccion.setText("");
         idpartido_modificar_prediccion.setText("");
         monto_modificar_prediccion.setText("");
@@ -2504,6 +2512,11 @@ public class Main extends javax.swing.JFrame {
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_prediccion.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from predicciones where id_prediccion="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_prediccion.setText("");
     }//GEN-LAST:event_jButton21ActionPerformed
 
@@ -2542,6 +2555,14 @@ public class Main extends javax.swing.JFrame {
         idauxiliar2 = id_auxiliar2_crear_partido.getText();
         goleslocal = goles_local_crear_partido.getText();
         golesvisita = goles_visita_crear_partido.getText();
+        fecha=fecha_crear_partido.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into partido(id_encuentro,id_equipo_local,id_equipo_visita,id_arbitro,id_arbitro_auxiliar1,id_arbitro_auxiliar2,goles_local,goles_visita,fecha_juego)" + 
+                "values (" + Integer.parseInt(id) + ", " + Integer.parseInt(idlocal) + ", "+Integer.parseInt(idvisita)+","+Integer.parseInt(idarbitro)+","+Integer.parseInt(idauxiliar)+
+                ","+Integer.parseInt(idauxiliar2)+","+Integer.parseInt(goleslocal)+","+Integer.parseInt(golesvisita)+",'"+fecha+"');");
+        finalizarConexion();
         id_crear_partido.setText("");
         id_local_crear_partido.setText("");
         id_visita_crear_partido.setText("");
@@ -2564,6 +2585,16 @@ public class Main extends javax.swing.JFrame {
         idauxiliar2 = id_auxiliar2_modificar_partido.getText();
         goleslocal = goles_local_modificar_partido.getText();
         golesvisita = goles_visita_modificar_partido.getText();
+        fecha=fecha_modificar_partido.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update partido" + 
+                "set id_equipo_local=" + Integer.parseInt(idlocal) + ", id_equipo_visita="+Integer.parseInt(idvisita)+
+                ", id_arbitro="+Integer.parseInt(idarbitro)+", id_arbitro_auxiliar1="+Integer.parseInt(idauxiliar)+
+                ",id_arbitro_auxiliar2="+Integer.parseInt(idauxiliar2)+",goles_local="+Integer.parseInt(goleslocal)+",goles_visita="+Integer.parseInt(golesvisita)+",fecha_juego='"+fecha+
+                "' where id_encuentro=" + Integer.parseInt(id) + ";");
+        finalizarConexion();
         id_modificar_partido.setText("");
         id_local_modificar_partido.setText("");
         id_visita_modificar_partido.setText("");
@@ -2578,6 +2609,11 @@ public class Main extends javax.swing.JFrame {
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_partido.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from partido where id_partido="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_partido.setText("");
     }//GEN-LAST:event_jButton24ActionPerformed
 
@@ -2840,7 +2876,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem_ModificarQuiniela;
     private javax.swing.JMenu jMenu_Crear;
     private javax.swing.JMenu jMenu_Eliminar;
-    private javax.swing.JMenu jMenu_Listar;
     private javax.swing.JMenu jMenu_Modificar;
     private javax.swing.JTextField local_crear_prediccion;
     private javax.swing.JTextField local_modificar_prediccion;
