@@ -140,22 +140,78 @@ public class Main extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
+        crear_equipo = new javax.swing.JDialog();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        id_entrenador_crear_equipo = new javax.swing.JTextField();
+        nombre_crear_equipo = new javax.swing.JTextField();
+        id_crear_equipo = new javax.swing.JTextField();
+        jButton13 = new javax.swing.JButton();
+        modificar_equipo = new javax.swing.JDialog();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        id_entrenador_modificar_equipo = new javax.swing.JTextField();
+        nombre_modificar_equipo = new javax.swing.JTextField();
+        id_modificar_equipo = new javax.swing.JTextField();
+        jButton14 = new javax.swing.JButton();
+        eliminar_equipo = new javax.swing.JDialog();
+        jLabel56 = new javax.swing.JLabel();
+        id_eliminar_equipo = new javax.swing.JTextField();
+        jButton15 = new javax.swing.JButton();
+        jLabel57 = new javax.swing.JLabel();
+        crear_quiniela = new javax.swing.JDialog();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        inicio_crear_quiniela = new javax.swing.JTextField();
+        id_crear_quiniela = new javax.swing.JTextField();
+        fin_crear_quiniela = new javax.swing.JTextField();
+        inversion_crear_quiniela = new javax.swing.JTextField();
+        ganancia_crear_quiniela = new javax.swing.JTextField();
+        jButton16 = new javax.swing.JButton();
+        modificar_quiniela = new javax.swing.JDialog();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        inicio_modificar_quiniela = new javax.swing.JTextField();
+        id_modificar_quiniela = new javax.swing.JTextField();
+        fin_modificar_quiniela = new javax.swing.JTextField();
+        inversion_modificar_quiniela = new javax.swing.JTextField();
+        ganancia_modificar_quiniela = new javax.swing.JTextField();
+        jButton17 = new javax.swing.JButton();
+        eliminar_quiniela = new javax.swing.JDialog();
+        jLabel68 = new javax.swing.JLabel();
+        id_eliminar_quiniela = new javax.swing.JTextField();
+        jButton18 = new javax.swing.JButton();
+        jLabel73 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_Crear = new javax.swing.JMenu();
         jMenuItem_CrearJugador = new javax.swing.JMenuItem();
         jMenuItem_CrearEntrenador = new javax.swing.JMenuItem();
         jMenuItem_CrearArbitro = new javax.swing.JMenuItem();
         jMenuItem_CrearClub = new javax.swing.JMenuItem();
+        jMenuItem_CrearEquipo = new javax.swing.JMenuItem();
+        jMenuItem_CrearQuiniela = new javax.swing.JMenuItem();
         jMenu_Modificar = new javax.swing.JMenu();
         jMenuItem_ModificarJugador = new javax.swing.JMenuItem();
         jMenuItem_ModificarEntrenador = new javax.swing.JMenuItem();
         jMenuItem_ModificarArbitro = new javax.swing.JMenuItem();
         jMenuItem_ModificarClub = new javax.swing.JMenuItem();
+        jMenuItem_ModificarEquipo = new javax.swing.JMenuItem();
+        jMenuItem_ModificarQuiniela = new javax.swing.JMenuItem();
         jMenu_Eliminar = new javax.swing.JMenu();
         jMenuItem_EliminarJugador = new javax.swing.JMenuItem();
         jMenuItem_EliminarEntrenador = new javax.swing.JMenuItem();
         jMenuItem_EliminarArbitro = new javax.swing.JMenuItem();
         jMenuItem_EliminarClub = new javax.swing.JMenuItem();
+        jMenuItem_EliminarEquipo = new javax.swing.JMenuItem();
+        jMenuItem_EliminarQuiniela = new javax.swing.JMenuItem();
         jMenu_Listar = new javax.swing.JMenu();
 
         jLabel1.setText("ID:");
@@ -895,6 +951,346 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(199, Short.MAX_VALUE))
         );
 
+        jLabel48.setText("ID:");
+
+        jLabel51.setText("Nombre:");
+
+        jLabel52.setText("ID Entrenador:");
+
+        jButton13.setText("Crear");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crear_equipoLayout = new javax.swing.GroupLayout(crear_equipo.getContentPane());
+        crear_equipo.getContentPane().setLayout(crear_equipoLayout);
+        crear_equipoLayout.setHorizontalGroup(
+            crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_equipoLayout.createSequentialGroup()
+                .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_equipoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel52)
+                            .addComponent(jLabel51)
+                            .addComponent(jLabel48))
+                        .addGap(18, 18, 18)
+                        .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(id_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_entrenador_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(crear_equipoLayout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jButton13)))
+                .addContainerGap(180, Short.MAX_VALUE))
+        );
+        crear_equipoLayout.setVerticalGroup(
+            crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_equipoLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel48)
+                    .addComponent(id_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(nombre_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(id_entrenador_crear_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton13)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+
+        jLabel53.setText("ID:");
+
+        jLabel54.setText("Nombre:");
+
+        jLabel55.setText("ID Entrenador:");
+
+        jButton14.setText("Modificar");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modificar_equipoLayout = new javax.swing.GroupLayout(modificar_equipo.getContentPane());
+        modificar_equipo.getContentPane().setLayout(modificar_equipoLayout);
+        modificar_equipoLayout.setHorizontalGroup(
+            modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_equipoLayout.createSequentialGroup()
+                .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_equipoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel55)
+                            .addComponent(jLabel54)
+                            .addComponent(jLabel53))
+                        .addGap(18, 18, 18)
+                        .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(id_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_entrenador_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_equipoLayout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jButton14)))
+                .addContainerGap(180, Short.MAX_VALUE))
+        );
+        modificar_equipoLayout.setVerticalGroup(
+            modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_equipoLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(id_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(nombre_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(id_entrenador_modificar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton14)
+                .addContainerGap(121, Short.MAX_VALUE))
+        );
+
+        jLabel56.setText("ID:");
+
+        jButton15.setText("Eliminar");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+
+        jLabel57.setText("Ingrese el ID del equipo a eliminar");
+
+        javax.swing.GroupLayout eliminar_equipoLayout = new javax.swing.GroupLayout(eliminar_equipo.getContentPane());
+        eliminar_equipo.getContentPane().setLayout(eliminar_equipoLayout);
+        eliminar_equipoLayout.setHorizontalGroup(
+            eliminar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_equipoLayout.createSequentialGroup()
+                .addGroup(eliminar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminar_equipoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel56)
+                        .addGap(75, 75, 75)
+                        .addComponent(id_eliminar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminar_equipoLayout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(jButton15))
+                    .addGroup(eliminar_equipoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel57)))
+                .addContainerGap(180, Short.MAX_VALUE))
+        );
+        eliminar_equipoLayout.setVerticalGroup(
+            eliminar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_equipoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel57)
+                .addGap(17, 17, 17)
+                .addGroup(eliminar_equipoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(id_eliminar_equipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton15)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+
+        jLabel58.setText("ID:");
+
+        jLabel59.setText("Fecha Inicio:");
+
+        jLabel60.setText("Fecha Fin:");
+
+        jLabel61.setText("Inversion:");
+
+        jLabel62.setText("Ganancia:");
+
+        jButton16.setText("Crear");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crear_quinielaLayout = new javax.swing.GroupLayout(crear_quiniela.getContentPane());
+        crear_quiniela.getContentPane().setLayout(crear_quinielaLayout);
+        crear_quinielaLayout.setHorizontalGroup(
+            crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_quinielaLayout.createSequentialGroup()
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_quinielaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel58)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel62))
+                        .addGap(18, 18, 18)
+                        .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ganancia_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inversion_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fin_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inicio_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(crear_quinielaLayout.createSequentialGroup()
+                        .addGap(115, 115, 115)
+                        .addComponent(jButton16)))
+                .addContainerGap(191, Short.MAX_VALUE))
+        );
+        crear_quinielaLayout.setVerticalGroup(
+            crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_quinielaLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel58)
+                    .addComponent(id_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel59)
+                    .addComponent(inicio_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel60)
+                    .addComponent(fin_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel61)
+                    .addComponent(inversion_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(crear_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel62)
+                    .addComponent(ganancia_crear_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(jButton16)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        jLabel63.setText("ID:");
+
+        jLabel64.setText("Fecha Inicio:");
+
+        jLabel65.setText("Fecha Fin:");
+
+        jLabel66.setText("Inversion:");
+
+        jLabel67.setText("Ganancia:");
+
+        jButton17.setText("Modificar");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modificar_quinielaLayout = new javax.swing.GroupLayout(modificar_quiniela.getContentPane());
+        modificar_quiniela.getContentPane().setLayout(modificar_quinielaLayout);
+        modificar_quinielaLayout.setHorizontalGroup(
+            modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_quinielaLayout.createSequentialGroup()
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_quinielaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel64)
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel65)
+                            .addComponent(jLabel66)
+                            .addComponent(jLabel67))
+                        .addGap(18, 18, 18)
+                        .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ganancia_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inversion_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fin_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(inicio_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_quinielaLayout.createSequentialGroup()
+                        .addGap(115, 115, 115)
+                        .addComponent(jButton17)))
+                .addContainerGap(191, Short.MAX_VALUE))
+        );
+        modificar_quinielaLayout.setVerticalGroup(
+            modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_quinielaLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel63)
+                    .addComponent(id_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel64)
+                    .addComponent(inicio_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel65)
+                    .addComponent(fin_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel66)
+                    .addComponent(inversion_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(modificar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel67)
+                    .addComponent(ganancia_modificar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(jButton17)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        jLabel68.setText("ID:");
+
+        jButton18.setText("Crear");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+
+        jLabel73.setText("Ingrese el ID de la quiniela que desea borrar");
+
+        javax.swing.GroupLayout eliminar_quinielaLayout = new javax.swing.GroupLayout(eliminar_quiniela.getContentPane());
+        eliminar_quiniela.getContentPane().setLayout(eliminar_quinielaLayout);
+        eliminar_quinielaLayout.setHorizontalGroup(
+            eliminar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_quinielaLayout.createSequentialGroup()
+                .addGroup(eliminar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminar_quinielaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel68)
+                        .addGap(64, 64, 64)
+                        .addComponent(id_eliminar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(eliminar_quinielaLayout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addComponent(jButton18))
+                    .addGroup(eliminar_quinielaLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel73)))
+                .addContainerGap(177, Short.MAX_VALUE))
+        );
+        eliminar_quinielaLayout.setVerticalGroup(
+            eliminar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_quinielaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel73)
+                .addGap(17, 17, 17)
+                .addGroup(eliminar_quinielaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel68)
+                    .addComponent(id_eliminar_quiniela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton18)
+                .addContainerGap(197, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu_Crear.setText("Crear");
@@ -930,6 +1326,22 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Crear.add(jMenuItem_CrearClub);
+
+        jMenuItem_CrearEquipo.setText("Equipo");
+        jMenuItem_CrearEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_CrearEquipoActionPerformed(evt);
+            }
+        });
+        jMenu_Crear.add(jMenuItem_CrearEquipo);
+
+        jMenuItem_CrearQuiniela.setText("Quiniela");
+        jMenuItem_CrearQuiniela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_CrearQuinielaActionPerformed(evt);
+            }
+        });
+        jMenu_Crear.add(jMenuItem_CrearQuiniela);
 
         jMenuBar1.add(jMenu_Crear);
 
@@ -967,6 +1379,22 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu_Modificar.add(jMenuItem_ModificarClub);
 
+        jMenuItem_ModificarEquipo.setText("Equipo");
+        jMenuItem_ModificarEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarEquipoActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarEquipo);
+
+        jMenuItem_ModificarQuiniela.setText("Quiniela");
+        jMenuItem_ModificarQuiniela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarQuinielaActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarQuiniela);
+
         jMenuBar1.add(jMenu_Modificar);
 
         jMenu_Eliminar.setText("Eliminar");
@@ -1002,6 +1430,22 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Eliminar.add(jMenuItem_EliminarClub);
+
+        jMenuItem_EliminarEquipo.setText("Equipo");
+        jMenuItem_EliminarEquipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarEquipoActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarEquipo);
+
+        jMenuItem_EliminarQuiniela.setText("Quiniela");
+        jMenuItem_EliminarQuiniela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarQuinielaActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarQuiniela);
 
         jMenuBar1.add(jMenu_Eliminar);
 
@@ -1254,6 +1698,119 @@ public class Main extends javax.swing.JFrame {
         id_modificar_club.setText("");
     }//GEN-LAST:event_jButton12ActionPerformed
 
+    private void jMenuItem_CrearEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_CrearEquipoActionPerformed
+        // TODO add your handling code here:
+        crear_equipo.setModal(true);
+        crear_equipo.pack();
+        crear_equipo.setLocationRelativeTo(this);
+        crear_equipo.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_CrearEquipoActionPerformed
+
+    private void jMenuItem_ModificarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarEquipoActionPerformed
+        // TODO add your handling code here:
+        modificar_equipo.setModal(true);
+        modificar_equipo.pack();
+        modificar_equipo.setLocationRelativeTo(this);
+        modificar_equipo.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_ModificarEquipoActionPerformed
+
+    private void jMenuItem_EliminarEquipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarEquipoActionPerformed
+        // TODO add your handling code here:
+        eliminar_equipo.setModal(true);
+        eliminar_equipo.pack();
+        eliminar_equipo.setLocationRelativeTo(this);
+        eliminar_equipo.setVisible(true); 
+    }//GEN-LAST:event_jMenuItem_EliminarEquipoActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        String id,nombre,identrenador;
+        id = id_crear_equipo.getText();
+        nombre = nombre_crear_equipo.getText();
+        identrenador = id_entrenador_crear_equipo.getText();
+        id_crear_equipo.setText("");
+        nombre_crear_equipo.setText("");
+        id_entrenador_crear_equipo.setText("");
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        String id,nombre,identrenador;
+        id = id_modificar_equipo.getText();
+        nombre = nombre_modificar_equipo.getText();
+        identrenador = id_entrenador_modificar_equipo.getText();
+        id_modificar_equipo.setText("");
+        nombre_modificar_equipo.setText("");
+        id_entrenador_modificar_equipo.setText("");
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+        String id,nombre,identrenador;
+        id = id_eliminar_equipo.getText();
+        id_eliminar_equipo.setText("");
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jMenuItem_CrearQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_CrearQuinielaActionPerformed
+        // TODO add your handling code here:
+        crear_quiniela.setModal(true);
+        crear_quiniela.pack();
+        crear_quiniela.setLocationRelativeTo(this);
+        crear_quiniela.setVisible(true);        
+    }//GEN-LAST:event_jMenuItem_CrearQuinielaActionPerformed
+
+    private void jMenuItem_ModificarQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarQuinielaActionPerformed
+        // TODO add your handling code here:
+        modificar_quiniela.setModal(true);
+        modificar_quiniela.pack();
+        modificar_quiniela.setLocationRelativeTo(this);
+        modificar_quiniela.setVisible(true);       
+    }//GEN-LAST:event_jMenuItem_ModificarQuinielaActionPerformed
+
+    private void jMenuItem_EliminarQuinielaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarQuinielaActionPerformed
+        // TODO add your handling code here:
+        eliminar_quiniela.setModal(true);
+        eliminar_quiniela.pack();
+        eliminar_quiniela.setLocationRelativeTo(this);
+        eliminar_quiniela.setVisible(true);       
+    }//GEN-LAST:event_jMenuItem_EliminarQuinielaActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+        String id,inicio,fin,inversion,ganancia;
+        id = id_crear_quiniela.getText();
+        inicio = inicio_crear_quiniela.getText();
+        fin = fin_crear_quiniela.getText();
+        inversion = inversion_crear_quiniela.getText();
+        ganancia = ganancia_crear_quiniela.getText();
+        id_crear_quiniela.setText("");
+        inicio_crear_quiniela.setText("");
+        fin_crear_quiniela.setText("");
+        inversion_crear_quiniela.setText("");
+        ganancia_crear_quiniela.setText("");
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+        String id,inicio,fin,inversion,ganancia;
+        id = id_modificar_quiniela.getText();
+        inicio = inicio_modificar_quiniela.getText();
+        fin = fin_modificar_quiniela.getText();
+        inversion = inversion_modificar_quiniela.getText();
+        ganancia = ganancia_modificar_quiniela.getText();
+        id_modificar_quiniela.setText("");
+        inicio_modificar_quiniela.setText("");
+        fin_modificar_quiniela.setText("");
+        inversion_modificar_quiniela.setText("");
+        ganancia_modificar_quiniela.setText("");
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_quiniela.getText();
+        id_eliminar_quiniela.setText("");
+    }//GEN-LAST:event_jButton18ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1293,33 +1850,59 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog crear_arbitro;
     private javax.swing.JDialog crear_club;
     private javax.swing.JDialog crear_entrenador;
+    private javax.swing.JDialog crear_equipo;
     private javax.swing.JDialog crear_jugador;
+    private javax.swing.JDialog crear_quiniela;
     private javax.swing.JDialog eliminar_arbitro;
     private javax.swing.JDialog eliminar_club;
     private javax.swing.JDialog eliminar_entrenador;
+    private javax.swing.JDialog eliminar_equipo;
     private javax.swing.JDialog eliminar_jugador;
+    private javax.swing.JDialog eliminar_quiniela;
     private javax.swing.JTextField fechanac_crear_arbitro;
     private javax.swing.JTextField fechanac_crear_entrenador;
     private javax.swing.JTextField fechanac_crear_jugador;
     private javax.swing.JTextField fechanac_modificar_arbitro;
     private javax.swing.JTextField fechanac_modificar_entrenador;
     private javax.swing.JTextField fechanac_modificar_jugador;
+    private javax.swing.JTextField fin_crear_quiniela;
+    private javax.swing.JTextField fin_modificar_quiniela;
+    private javax.swing.JTextField ganancia_crear_quiniela;
+    private javax.swing.JTextField ganancia_modificar_quiniela;
     private javax.swing.JTextField id_crear_arbitro;
     private javax.swing.JTextField id_crear_club;
     private javax.swing.JTextField id_crear_entrenador;
+    private javax.swing.JTextField id_crear_equipo;
     private javax.swing.JTextField id_crear_jugador;
+    private javax.swing.JTextField id_crear_quiniela;
     private javax.swing.JTextField id_eliminar_arbitro;
     private javax.swing.JTextField id_eliminar_club;
     private javax.swing.JTextField id_eliminar_entrenador;
+    private javax.swing.JTextField id_eliminar_equipo;
     private javax.swing.JTextField id_eliminar_jugador;
+    private javax.swing.JTextField id_eliminar_quiniela;
+    private javax.swing.JTextField id_entrenador_crear_equipo;
+    private javax.swing.JTextField id_entrenador_modificar_equipo;
     private javax.swing.JTextField id_modificar_arbitro;
     private javax.swing.JTextField id_modificar_club;
     private javax.swing.JTextField id_modificar_entrenador;
+    private javax.swing.JTextField id_modificar_equipo;
     private javax.swing.JTextField id_modificar_jugador;
+    private javax.swing.JTextField id_modificar_quiniela;
+    private javax.swing.JTextField inicio_crear_quiniela;
+    private javax.swing.JTextField inicio_modificar_quiniela;
+    private javax.swing.JTextField inversion_crear_quiniela;
+    private javax.swing.JTextField inversion_modificar_quiniela;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -1370,26 +1953,52 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem_CrearArbitro;
     private javax.swing.JMenuItem jMenuItem_CrearClub;
     private javax.swing.JMenuItem jMenuItem_CrearEntrenador;
+    private javax.swing.JMenuItem jMenuItem_CrearEquipo;
     private javax.swing.JMenuItem jMenuItem_CrearJugador;
+    private javax.swing.JMenuItem jMenuItem_CrearQuiniela;
     private javax.swing.JMenuItem jMenuItem_EliminarArbitro;
     private javax.swing.JMenuItem jMenuItem_EliminarClub;
     private javax.swing.JMenuItem jMenuItem_EliminarEntrenador;
+    private javax.swing.JMenuItem jMenuItem_EliminarEquipo;
     private javax.swing.JMenuItem jMenuItem_EliminarJugador;
+    private javax.swing.JMenuItem jMenuItem_EliminarQuiniela;
     private javax.swing.JMenuItem jMenuItem_ModificarArbitro;
     private javax.swing.JMenuItem jMenuItem_ModificarClub;
     private javax.swing.JMenuItem jMenuItem_ModificarEntrenador;
+    private javax.swing.JMenuItem jMenuItem_ModificarEquipo;
     private javax.swing.JMenuItem jMenuItem_ModificarJugador;
+    private javax.swing.JMenuItem jMenuItem_ModificarQuiniela;
     private javax.swing.JMenu jMenu_Crear;
     private javax.swing.JMenu jMenu_Eliminar;
     private javax.swing.JMenu jMenu_Listar;
@@ -1397,14 +2006,18 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog modificar_arbitro;
     private javax.swing.JDialog modificar_club;
     private javax.swing.JDialog modificar_entrenador;
+    private javax.swing.JDialog modificar_equipo;
     private javax.swing.JDialog modificar_jugador;
+    private javax.swing.JDialog modificar_quiniela;
     private javax.swing.JTextField nombre_crear_arbitro;
     private javax.swing.JTextField nombre_crear_club;
     private javax.swing.JTextField nombre_crear_entrenador;
+    private javax.swing.JTextField nombre_crear_equipo;
     private javax.swing.JTextField nombre_crear_jugador;
     private javax.swing.JTextField nombre_modificar_arbitro;
     private javax.swing.JTextField nombre_modificar_club;
     private javax.swing.JTextField nombre_modificar_entrenador;
+    private javax.swing.JTextField nombre_modificar_equipo;
     private javax.swing.JTextField nombre_modificar_jugador;
     private javax.swing.JTextField pesobase_crear_arbitro;
     private javax.swing.JTextField pesobase_crear_entrenador;
