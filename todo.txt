@@ -1,0 +1,188 @@
+CREATE KEYSPACE proyecto
+  WITH REPLICATION = { 
+   'class' : 'SimpleStrategy', 
+   'replication_factor' : 1 
+  };
+
+use proyecto;
+
+create table jugadores(
+id_jugador int primary key,
+fecha_nac date,
+nombre_jugador text,
+peso_base int,
+peso_extra int);
+
+id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra
+
+create table entrenador(
+id_entrenador int primary key,
+fecha_nac date,
+nombre_entrenador text,
+peso_base int,
+peso_extra int);
+
+create table arbitro(
+id_arbitro int primary key,
+fecha_nac date,
+nombre_arbitro text,
+peso_base int,
+peso_extra int);
+
+create table clubes(
+id_club int primary key,
+nombre_club text);
+
+create table equipo(
+id_equipo int primary key,
+nombre_equipo text
+id_entrenador int);
+
+create table quiniela(
+id_quiniela int primary key,
+fecha_inicio date,
+fecha_fin date,
+inversion int,
+ganancia int);
+
+create table predicciones(
+id_prediccion int primary key,
+id_partido int,
+monto int,
+goles_local int,
+goles_visita int);
+
+create table partido(
+id_encuentro int primary key,
+id_equipo_local int,
+id_equipo_visita int,
+id_arbitro int,
+id_arbitro_auxiliar1 int
+id_arbitro_auxiliar2 int,
+goles_local int,
+goles_visita int,
+fecha_juego date);
+
+create table equipo_jugador(
+id_equipo int,
+id_jugador int primary key,
+reserva boolean);
+
+create table club_jugador(
+id_club int,
+id_jugador int primary key);
+
+insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (1,’2010-05-01’,’Messi’,200,20);
+insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (2,’2013-04-12’,’Ronaldo’,400,30);
+insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (3,’2015-10-04’,’Dani’,300,15);
+insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (4,’2016-08-13’,’Neymar’,200,25);
+insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (5,’2018-07-01’,’Nani’,300,5);
+Insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (6,’2008-07-05’,’Faker’,900,6);
+Insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (7,’2011-02-12’,’Bold’,700,21);
+Insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (8,’2013-12-03’,’Oliveraton’,500,38);
+Insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (9,’2014-06-10’,’Arbeloa’,100,27);
+Insert into jugadores(id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra) 
+Values (10,’2016-09-06’,’Moh’,800,34);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (1,’Real Sociedad’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (2,’Milan’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (3,’FC Barcelona’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (4,’Chelsey’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (5,’Bayern Munich’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (6,’Cloud 9’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (7,’Log Horizon’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (8,’Real Choloma’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (9,’Seleccion de Jamaica’);
+
+Insert into equipo(id_equipo,nombre_equipo) 
+Values (10,’SnapChat’);
+
+
+Insert into clubes(id_club,nombre_club) 
+Values (1,’Naranjita’);
+Insert into clubes(id_club,nombre_club) 
+Values (2,’compas’);
+Insert into clubes(id_club,nombre_club) 
+Values (3,’paisas’);
+Insert into clubes(id_club,nombre_club) 
+Values (4,’we fire’);
+Insert into clubes(id_club,nombre_club) 
+Values (5,’los afi’);
+Insert into clubes(id_club,nombre_club) 
+Values (6,’SuperCampeones’);
+Insert into clubes(id_club,nombre_club) 
+Values (7,’Aldea de la Hoja’);
+Insert into clubes(id_club,nombre_club) 
+Values (8,’Sangre Saiyan’);
+Insert into clubes(id_club,nombre_club) 
+Values (9,’Youtube’);
+Insert into clubes(id_club,nombre_club) 
+Values (10,’los santos’);
+
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (1,’2010-01-01’,’Guardiola’,200,15);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (2,’2012-05-06’,’Mohurino’,400,2);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (3,’2014-12-04’,’Zidan’,300,24);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (4,’2011-07-03’,’David’,260,56);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (5,’2013-06-02’,’Martino’,560,21);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (6,’2008-11-11’,’Machado’,199,1);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (7,’2010-06-02’,’Bold’,300,20);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (8,’2012-10-03’,’Phelps’,560,34);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (9,’2009-02-04’,’Jordan’,710,45);
+Insert into entrenador(id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra) 
+Values (10,’2011-03-07’,’Sedinho’,880,39);
+
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (1,’2000-01-02’,’Jorge’,200,14);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (2,’1998-03-04’,’Daniel’,300,26);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (3,’2011-04-11’,’Gabriel’,120,24);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (4,’2012-01-12’,’James’,100,53);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (5,’1990-05-02’,’Alexis’,400,52);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (6,’1998-04-10’,’Ohara’,1998,24);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (7,’1996-01-02’,’Uchiha’,200,35);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (8,’2009-02-12’,’Angel’,300,63);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (9,’2010-08-10’,’Jessie’,500,9);
+Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra) 
+Values (10,’1988-11-12’,’Mejia’,600,1);

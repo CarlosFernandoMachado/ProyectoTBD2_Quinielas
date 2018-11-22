@@ -219,6 +219,51 @@ public class Main extends javax.swing.JFrame {
         id_eliminar_prediccion = new javax.swing.JTextField();
         jButton21 = new javax.swing.JButton();
         jLabel85 = new javax.swing.JLabel();
+        crear_partido = new javax.swing.JDialog();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        id_crear_partido = new javax.swing.JTextField();
+        id_local_crear_partido = new javax.swing.JTextField();
+        id_visita_crear_partido = new javax.swing.JTextField();
+        id_arbitro_crear_partido = new javax.swing.JTextField();
+        id_auxiliar_crear_partido = new javax.swing.JTextField();
+        id_auxiliar2_crear_partido = new javax.swing.JTextField();
+        goles_local_crear_partido = new javax.swing.JTextField();
+        goles_visita_crear_partido = new javax.swing.JTextField();
+        fecha_crear_partido = new javax.swing.JTextField();
+        jButton22 = new javax.swing.JButton();
+        modificar_partido = new javax.swing.JDialog();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        id_modificar_partido = new javax.swing.JTextField();
+        id_local_modificar_partido = new javax.swing.JTextField();
+        id_visita_modificar_partido = new javax.swing.JTextField();
+        id_arbitro_modificar_partido = new javax.swing.JTextField();
+        id_auxiliar_modificar_partido = new javax.swing.JTextField();
+        id_auxiliar2_modificar_partido = new javax.swing.JTextField();
+        goles_local_modificar_partido = new javax.swing.JTextField();
+        goles_visita_modificar_partido = new javax.swing.JTextField();
+        fecha_modificar_partido = new javax.swing.JTextField();
+        jButton23 = new javax.swing.JButton();
+        eliminar_partido = new javax.swing.JDialog();
+        jLabel100 = new javax.swing.JLabel();
+        id_eliminar_partido = new javax.swing.JTextField();
+        jButton24 = new javax.swing.JButton();
+        jLabel109 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_Crear = new javax.swing.JMenu();
         jMenuItem_CrearJugador = new javax.swing.JMenuItem();
@@ -1508,6 +1553,281 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(194, Short.MAX_VALUE))
         );
 
+        jLabel81.setText("ID:");
+
+        jLabel82.setText("ID Equipo Local:");
+
+        jLabel83.setText("ID Equipo Visita:");
+
+        jLabel84.setText("ID Arbitro:");
+
+        jLabel86.setText("ID Arbitro Auxiliar 1:");
+
+        jLabel87.setText("ID Arbitro Auxiliar 2:");
+
+        jLabel88.setText("Goles Locales:");
+
+        jLabel89.setText("Goles Visita:");
+
+        jLabel90.setText("Fecha:");
+
+        jButton22.setText("Crear");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crear_partidoLayout = new javax.swing.GroupLayout(crear_partido.getContentPane());
+        crear_partido.getContentPane().setLayout(crear_partidoLayout);
+        crear_partidoLayout.setHorizontalGroup(
+            crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_partidoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_partidoLayout.createSequentialGroup()
+                        .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel81)
+                            .addComponent(jLabel82)
+                            .addComponent(jLabel83)
+                            .addComponent(jLabel84)
+                            .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, crear_partidoLayout.createSequentialGroup()
+                                    .addComponent(jLabel90)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(fecha_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, crear_partidoLayout.createSequentialGroup()
+                                    .addComponent(jLabel89)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(goles_visita_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, crear_partidoLayout.createSequentialGroup()
+                                    .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel87)
+                                        .addComponent(jLabel88))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(id_auxiliar2_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(goles_local_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(crear_partidoLayout.createSequentialGroup()
+                        .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(id_arbitro_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(crear_partidoLayout.createSequentialGroup()
+                                .addComponent(jLabel86)
+                                .addGap(18, 18, 18)
+                                .addComponent(id_auxiliar_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(id_visita_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_local_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                        .addComponent(jButton22)
+                        .addGap(64, 64, 64))))
+        );
+        crear_partidoLayout.setVerticalGroup(
+            crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_partidoLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel81)
+                    .addComponent(id_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel82)
+                    .addComponent(id_local_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel83)
+                    .addComponent(id_visita_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel84)
+                    .addComponent(id_arbitro_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_partidoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel86)
+                            .addComponent(id_auxiliar_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(crear_partidoLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jButton22)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel87)
+                    .addComponent(id_auxiliar2_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel88)
+                    .addComponent(goles_local_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel89)
+                    .addComponent(goles_visita_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel90)
+                    .addComponent(fecha_crear_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        jLabel91.setText("ID:");
+
+        jLabel92.setText("ID Equipo Local:");
+
+        jLabel93.setText("ID Equipo Visita:");
+
+        jLabel94.setText("ID Arbitro:");
+
+        jLabel95.setText("ID Arbitro Auxiliar 1:");
+
+        jLabel96.setText("ID Arbitro Auxiliar 2:");
+
+        jLabel97.setText("Goles Locales:");
+
+        jLabel98.setText("Goles Visita:");
+
+        jLabel99.setText("Fecha:");
+
+        jButton23.setText("Modificar");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modificar_partidoLayout = new javax.swing.GroupLayout(modificar_partido.getContentPane());
+        modificar_partido.getContentPane().setLayout(modificar_partidoLayout);
+        modificar_partidoLayout.setHorizontalGroup(
+            modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_partidoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_partidoLayout.createSequentialGroup()
+                        .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel91)
+                            .addComponent(jLabel92)
+                            .addComponent(jLabel93)
+                            .addComponent(jLabel94)
+                            .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, modificar_partidoLayout.createSequentialGroup()
+                                    .addComponent(jLabel99)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(fecha_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, modificar_partidoLayout.createSequentialGroup()
+                                    .addComponent(jLabel98)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(goles_visita_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, modificar_partidoLayout.createSequentialGroup()
+                                    .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel96)
+                                        .addComponent(jLabel97))
+                                    .addGap(18, 18, 18)
+                                    .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(id_auxiliar2_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(goles_local_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(modificar_partidoLayout.createSequentialGroup()
+                        .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(id_arbitro_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(modificar_partidoLayout.createSequentialGroup()
+                                .addComponent(jLabel95)
+                                .addGap(18, 18, 18)
+                                .addComponent(id_auxiliar_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(id_visita_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_local_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                        .addComponent(jButton23)
+                        .addGap(64, 64, 64))))
+        );
+        modificar_partidoLayout.setVerticalGroup(
+            modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_partidoLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel91)
+                    .addComponent(id_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel92)
+                    .addComponent(id_local_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel93)
+                    .addComponent(id_visita_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel94)
+                    .addComponent(id_arbitro_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_partidoLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel95)
+                            .addComponent(id_auxiliar_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_partidoLayout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jButton23)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel96)
+                    .addComponent(id_auxiliar2_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel97)
+                    .addComponent(goles_local_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel98)
+                    .addComponent(goles_visita_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel99)
+                    .addComponent(fecha_modificar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        jLabel100.setText("ID:");
+
+        jButton24.setText("Eliminar");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+
+        jLabel109.setText("Ingrese el ID del partido que desea eliminar");
+
+        javax.swing.GroupLayout eliminar_partidoLayout = new javax.swing.GroupLayout(eliminar_partido.getContentPane());
+        eliminar_partido.getContentPane().setLayout(eliminar_partidoLayout);
+        eliminar_partidoLayout.setHorizontalGroup(
+            eliminar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_partidoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(eliminar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel100)
+                    .addGroup(eliminar_partidoLayout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addGroup(eliminar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton24)
+                            .addComponent(id_eliminar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel109))
+                .addContainerGap(154, Short.MAX_VALUE))
+        );
+        eliminar_partidoLayout.setVerticalGroup(
+            eliminar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_partidoLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel109)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(eliminar_partidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel100)
+                    .addComponent(id_eliminar_partido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton24)
+                .addContainerGap(198, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu_Crear.setText("Crear");
@@ -1741,6 +2061,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_crear_jugador.getText();
         pesobase = pesobase_crear_jugador.getText();
         pesoextra = pesoextra_crear_jugador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into jugadores (id_jugador,fecha_nac,nombre_jugador,peso_base,peso_extra)" + 
+                "values (" + Integer.parseInt(id) + ", '" + fecha + "', '"+nombre+"',"+Integer.parseInt(pesobase)+","+Integer.parseInt(pesoextra)+");");
+        finalizarConexion();
         id_crear_jugador.setText("");
         fechanac_crear_jugador.setText("");
         nombre_crear_jugador.setText("");
@@ -1756,6 +2082,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_crear_entrenador.getText();
         pesobase = pesobase_crear_entrenador.getText();
         pesoextra = pesoextra_crear_entrenador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into entrenador (id_entrenador,fecha_nac,nombre_entrenador,peso_base,peso_extra)" + 
+                "values (" + Integer.parseInt(id) + ", '" + fecha + "', '"+nombre+"',"+Integer.parseInt(pesobase)+","+Integer.parseInt(pesoextra)+");");
+        finalizarConexion();
         id_crear_entrenador.setText("");
         fechanac_crear_entrenador.setText("");
         nombre_crear_entrenador.setText("");
@@ -1772,6 +2104,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_crear_arbitro.getText();
         pesobase = pesobase_crear_arbitro.getText();
         pesoextra = pesoextra_crear_arbitro.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into arbitro(id_arbitro,fecha_nac,nombre_arbitro,peso_base,peso_extra)" + 
+                "values (" + Integer.parseInt(id) + ", '" + fecha + "', '"+nombre+"',"+Integer.parseInt(pesobase)+","+Integer.parseInt(pesoextra)+");");
+        finalizarConexion();
         id_crear_arbitro.setText("");
         fechanac_crear_arbitro.setText("");
         nombre_crear_arbitro.setText("");
@@ -1811,6 +2149,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_modificar_jugador.getText();
         pesobase = pesobase_modificar_jugador.getText();
         pesoextra = pesoextra_modificar_jugador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update jugadores set fecha_nac='"+fecha+"',nombre_jugador='"+nombre+"',peso_base="+Integer.parseInt(pesobase)
+                +",peso_extra="+Integer.parseInt(pesoextra)+" where id_jugador="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_jugador.setText("");
         fechanac_modificar_jugador.setText("");
         nombre_modificar_jugador.setText("");
@@ -1826,6 +2170,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_modificar_entrenador.getText();
         pesobase = pesobase_modificar_entrenador.getText();
         pesoextra = pesoextra_modificar_entrenador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update entrenador set fecha_nac='"+fecha+"',nombre_entrenador='"+nombre+"',peso_base="+Integer.parseInt(pesobase)
+                +",peso_extra="+Integer.parseInt(pesoextra)+" where id_entrenador="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_entrenador.setText("");
         fechanac_modificar_entrenador.setText("");
         nombre_modificar_entrenador.setText("");
@@ -1841,6 +2191,12 @@ public class Main extends javax.swing.JFrame {
         nombre = nombre_modificar_arbitro.getText();
         pesobase = pesobase_modificar_arbitro.getText();
         pesoextra = pesoextra_modificar_arbitro.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update arbitro set fecha_nac='"+fecha+"',nombre_arbitro='"+nombre+"',peso_base="+Integer.parseInt(pesobase)
+                +",peso_extra="+Integer.parseInt(pesoextra)+" where id_arbitro="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_arbitro.setText("");
         fechanac_modificar_arbitro.setText("");
         nombre_modificar_arbitro.setText("");
@@ -1851,18 +2207,33 @@ public class Main extends javax.swing.JFrame {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_jugador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from jugadores where id_jugador="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_jugador.setText("");
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_entrenador.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from entrenador where id_entrenador="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_entrenador.setText("");
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_arbitro.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from arbitro where id_arbitro="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_arbitro.setText("");
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -1919,6 +2290,12 @@ public class Main extends javax.swing.JFrame {
         String id,nombre;
         id = id_crear_club.getText();
         nombre = nombre_crear_club.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into clubes(id_club,nombre_club)" + 
+                "values (" + Integer.parseInt(id) + ", '" + nombre + "');");
+        finalizarConexion();
         id_crear_club.setText("");
         nombre_crear_club.setText("");
     }//GEN-LAST:event_jButton10ActionPerformed
@@ -1928,6 +2305,11 @@ public class Main extends javax.swing.JFrame {
         String id,nombre;
         id = id_modificar_club.getText();
         nombre = nombre_modificar_club.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update clubes set nombre_club='"+nombre+"' where id_clubes="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_club.setText("");
         nombre_modificar_club.setText("");
     }//GEN-LAST:event_jButton11ActionPerformed
@@ -1936,6 +2318,11 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         String id;
         id = id_eliminar_club.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from clubes where id_clubes="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_club.setText("");
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -1969,6 +2356,12 @@ public class Main extends javax.swing.JFrame {
         id = id_crear_equipo.getText();
         nombre = nombre_crear_equipo.getText();
         identrenador = id_entrenador_crear_equipo.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into equipo(id_equipo,nombre_equipo,id_entrenador)" + 
+                "values (" + Integer.parseInt(id) + ", '" + nombre + "',"+Integer.parseInt(identrenador)+");");
+        finalizarConexion();
         id_crear_equipo.setText("");
         nombre_crear_equipo.setText("");
         id_entrenador_crear_equipo.setText("");
@@ -1980,6 +2373,11 @@ public class Main extends javax.swing.JFrame {
         id = id_modificar_equipo.getText();
         nombre = nombre_modificar_equipo.getText();
         identrenador = id_entrenador_modificar_equipo.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update equipo set nombre_equipo='"+nombre+"', id_entrenador="+Integer.parseInt(identrenador)+" where id_equipo="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_equipo.setText("");
         nombre_modificar_equipo.setText("");
         id_entrenador_modificar_equipo.setText("");
@@ -1987,8 +2385,12 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
-        String id,nombre,identrenador;
-        id = id_eliminar_equipo.getText();
+        String id = id_eliminar_equipo.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from equipo where id_equipo="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_equipo.setText("");
     }//GEN-LAST:event_jButton15ActionPerformed
 
@@ -2024,6 +2426,12 @@ public class Main extends javax.swing.JFrame {
         fin = fin_crear_quiniela.getText();
         inversion = inversion_crear_quiniela.getText();
         ganancia = ganancia_crear_quiniela.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("Insert into quiniela(id_quiniela,fecha_inicio,fecha_fin,inversion,ganancia)" + 
+                "values (" + Integer.parseInt(id) + ", '" + inicio + "', '"+fin+"',"+Integer.parseInt(inversion)+","+Integer.parseInt(ganancia)+");");
+        finalizarConexion();
         id_crear_quiniela.setText("");
         inicio_crear_quiniela.setText("");
         fin_crear_quiniela.setText("");
@@ -2039,6 +2447,12 @@ public class Main extends javax.swing.JFrame {
         fin = fin_modificar_quiniela.getText();
         inversion = inversion_modificar_quiniela.getText();
         ganancia = ganancia_modificar_quiniela.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("update quiniela set fecha_inicio='"+inicio+"',fecha_fin='"+fin+"',inversion="+Integer.parseInt(inversion)
+                +",ganancia="+Integer.parseInt(ganancia)+" where id_quiniela="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_modificar_quiniela.setText("");
         inicio_modificar_quiniela.setText("");
         fin_modificar_quiniela.setText("");
@@ -2049,6 +2463,11 @@ public class Main extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
         String id = id_eliminar_quiniela.getText();
+        IniciarConexion();
+        IniciarSession("proyecto");
+        d.session.execute
+        ("delete from quiniela where id_quiniela="+Integer.parseInt(id)+";");
+        finalizarConexion();
         id_eliminar_quiniela.setText("");
     }//GEN-LAST:event_jButton18ActionPerformed
 
@@ -2112,6 +2531,56 @@ public class Main extends javax.swing.JFrame {
         eliminar_prediccion.setVisible(true);    
     }//GEN-LAST:event_jMenuItem_EliminarPrediccionActionPerformed
 
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        String id,idlocal,idvisita,idarbitro,idauxiliar,idauxiliar2,goleslocal,golesvisita,fecha;
+        id = id_crear_partido.getText();
+        idlocal = id_local_crear_partido.getText();
+        idvisita = id_visita_crear_partido.getText();
+        idarbitro = id_arbitro_crear_partido.getText();
+        idauxiliar = id_auxiliar_crear_partido.getText();
+        idauxiliar2 = id_auxiliar2_crear_partido.getText();
+        goleslocal = goles_local_crear_partido.getText();
+        golesvisita = goles_visita_crear_partido.getText();
+        id_crear_partido.setText("");
+        id_local_crear_partido.setText("");
+        id_visita_crear_partido.setText("");
+        id_arbitro_crear_partido.setText("");
+        id_auxiliar_crear_partido.setText("");
+        id_auxiliar2_crear_partido.setText("");
+        goles_local_crear_partido.setText("");
+        goles_visita_crear_partido.setText("");
+        fecha_crear_partido.setText("");
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        String id,idlocal,idvisita,idarbitro,idauxiliar,idauxiliar2,goleslocal,golesvisita,fecha;
+        id = id_modificar_partido.getText();
+        idlocal = id_local_modificar_partido.getText();
+        idvisita = id_visita_modificar_partido.getText();
+        idarbitro = id_arbitro_modificar_partido.getText();
+        idauxiliar = id_auxiliar_modificar_partido.getText();
+        idauxiliar2 = id_auxiliar2_modificar_partido.getText();
+        goleslocal = goles_local_modificar_partido.getText();
+        golesvisita = goles_visita_modificar_partido.getText();
+        id_modificar_partido.setText("");
+        id_local_modificar_partido.setText("");
+        id_visita_modificar_partido.setText("");
+        id_arbitro_modificar_partido.setText("");
+        id_auxiliar_modificar_partido.setText("");
+        id_auxiliar2_modificar_partido.setText("");
+        goles_local_modificar_partido.setText("");
+        goles_visita_modificar_partido.setText("");
+        fecha_modificar_partido.setText("");
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_partido.getText();
+        id_eliminar_partido.setText("");
+    }//GEN-LAST:event_jButton24ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2153,6 +2622,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog crear_entrenador;
     private javax.swing.JDialog crear_equipo;
     private javax.swing.JDialog crear_jugador;
+    private javax.swing.JDialog crear_partido;
     private javax.swing.JDialog crear_prediccion;
     private javax.swing.JDialog crear_quiniela;
     private javax.swing.JDialog eliminar_arbitro;
@@ -2160,8 +2630,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog eliminar_entrenador;
     private javax.swing.JDialog eliminar_equipo;
     private javax.swing.JDialog eliminar_jugador;
+    private javax.swing.JDialog eliminar_partido;
     private javax.swing.JDialog eliminar_prediccion;
     private javax.swing.JDialog eliminar_quiniela;
+    private javax.swing.JTextField fecha_crear_partido;
+    private javax.swing.JTextField fecha_modificar_partido;
     private javax.swing.JTextField fechanac_crear_arbitro;
     private javax.swing.JTextField fechanac_crear_entrenador;
     private javax.swing.JTextField fechanac_crear_jugador;
@@ -2172,11 +2645,22 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField fin_modificar_quiniela;
     private javax.swing.JTextField ganancia_crear_quiniela;
     private javax.swing.JTextField ganancia_modificar_quiniela;
+    private javax.swing.JTextField goles_local_crear_partido;
+    private javax.swing.JTextField goles_local_modificar_partido;
+    private javax.swing.JTextField goles_visita_crear_partido;
+    private javax.swing.JTextField goles_visita_modificar_partido;
+    private javax.swing.JTextField id_arbitro_crear_partido;
+    private javax.swing.JTextField id_arbitro_modificar_partido;
+    private javax.swing.JTextField id_auxiliar2_crear_partido;
+    private javax.swing.JTextField id_auxiliar2_modificar_partido;
+    private javax.swing.JTextField id_auxiliar_crear_partido;
+    private javax.swing.JTextField id_auxiliar_modificar_partido;
     private javax.swing.JTextField id_crear_arbitro;
     private javax.swing.JTextField id_crear_club;
     private javax.swing.JTextField id_crear_entrenador;
     private javax.swing.JTextField id_crear_equipo;
     private javax.swing.JTextField id_crear_jugador;
+    private javax.swing.JTextField id_crear_partido;
     private javax.swing.JTextField id_crear_prediccion;
     private javax.swing.JTextField id_crear_quiniela;
     private javax.swing.JTextField id_eliminar_arbitro;
@@ -2184,17 +2668,23 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_eliminar_entrenador;
     private javax.swing.JTextField id_eliminar_equipo;
     private javax.swing.JTextField id_eliminar_jugador;
+    private javax.swing.JTextField id_eliminar_partido;
     private javax.swing.JTextField id_eliminar_prediccion;
     private javax.swing.JTextField id_eliminar_quiniela;
     private javax.swing.JTextField id_entrenador_crear_equipo;
     private javax.swing.JTextField id_entrenador_modificar_equipo;
+    private javax.swing.JTextField id_local_crear_partido;
+    private javax.swing.JTextField id_local_modificar_partido;
     private javax.swing.JTextField id_modificar_arbitro;
     private javax.swing.JTextField id_modificar_club;
     private javax.swing.JTextField id_modificar_entrenador;
     private javax.swing.JTextField id_modificar_equipo;
     private javax.swing.JTextField id_modificar_jugador;
+    private javax.swing.JTextField id_modificar_partido;
     private javax.swing.JTextField id_modificar_prediccion;
     private javax.swing.JTextField id_modificar_quiniela;
+    private javax.swing.JTextField id_visita_crear_partido;
+    private javax.swing.JTextField id_visita_modificar_partido;
     private javax.swing.JTextField idpartido_crear_prediccion;
     private javax.swing.JTextField idpartido_modificar_prediccion;
     private javax.swing.JTextField inicio_crear_quiniela;
@@ -2215,6 +2705,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -2224,6 +2717,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -2301,8 +2796,26 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem_CrearArbitro;
     private javax.swing.JMenuItem jMenuItem_CrearClub;
@@ -2336,6 +2849,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog modificar_entrenador;
     private javax.swing.JDialog modificar_equipo;
     private javax.swing.JDialog modificar_jugador;
+    private javax.swing.JDialog modificar_partido;
     private javax.swing.JDialog modificar_prediccion;
     private javax.swing.JDialog modificar_quiniela;
     private javax.swing.JTextField monto_crear_prediccion;
@@ -2365,4 +2879,5 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField visita_crear_prediccion;
     private javax.swing.JTextField visita_modificar_prediccion;
     // End of variables declaration//GEN-END:variables
+    CQL_Operaciones d = new CQL_Operaciones();
 }
