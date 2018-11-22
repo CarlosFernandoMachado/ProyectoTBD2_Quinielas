@@ -190,6 +190,35 @@ public class Main extends javax.swing.JFrame {
         id_eliminar_quiniela = new javax.swing.JTextField();
         jButton18 = new javax.swing.JButton();
         jLabel73 = new javax.swing.JLabel();
+        crear_prediccion = new javax.swing.JDialog();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        local_crear_prediccion = new javax.swing.JTextField();
+        id_crear_prediccion = new javax.swing.JTextField();
+        idpartido_crear_prediccion = new javax.swing.JTextField();
+        monto_crear_prediccion = new javax.swing.JTextField();
+        visita_crear_prediccion = new javax.swing.JTextField();
+        jButton19 = new javax.swing.JButton();
+        modificar_prediccion = new javax.swing.JDialog();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        local_modificar_prediccion = new javax.swing.JTextField();
+        id_modificar_prediccion = new javax.swing.JTextField();
+        idpartido_modificar_prediccion = new javax.swing.JTextField();
+        monto_modificar_prediccion = new javax.swing.JTextField();
+        visita_modificar_prediccion = new javax.swing.JTextField();
+        jButton20 = new javax.swing.JButton();
+        eliminar_prediccion = new javax.swing.JDialog();
+        jLabel80 = new javax.swing.JLabel();
+        id_eliminar_prediccion = new javax.swing.JTextField();
+        jButton21 = new javax.swing.JButton();
+        jLabel85 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu_Crear = new javax.swing.JMenu();
         jMenuItem_CrearJugador = new javax.swing.JMenuItem();
@@ -198,6 +227,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_CrearClub = new javax.swing.JMenuItem();
         jMenuItem_CrearEquipo = new javax.swing.JMenuItem();
         jMenuItem_CrearQuiniela = new javax.swing.JMenuItem();
+        jMenuItem_CrearPrediccion = new javax.swing.JMenuItem();
         jMenu_Modificar = new javax.swing.JMenu();
         jMenuItem_ModificarJugador = new javax.swing.JMenuItem();
         jMenuItem_ModificarEntrenador = new javax.swing.JMenuItem();
@@ -205,6 +235,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_ModificarClub = new javax.swing.JMenuItem();
         jMenuItem_ModificarEquipo = new javax.swing.JMenuItem();
         jMenuItem_ModificarQuiniela = new javax.swing.JMenuItem();
+        jMenuItem_ModificarPrediccion = new javax.swing.JMenuItem();
         jMenu_Eliminar = new javax.swing.JMenu();
         jMenuItem_EliminarJugador = new javax.swing.JMenuItem();
         jMenuItem_EliminarEntrenador = new javax.swing.JMenuItem();
@@ -212,6 +243,7 @@ public class Main extends javax.swing.JFrame {
         jMenuItem_EliminarClub = new javax.swing.JMenuItem();
         jMenuItem_EliminarEquipo = new javax.swing.JMenuItem();
         jMenuItem_EliminarQuiniela = new javax.swing.JMenuItem();
+        jMenuItem_EliminarPrediccion = new javax.swing.JMenuItem();
         jMenu_Listar = new javax.swing.JMenu();
 
         jLabel1.setText("ID:");
@@ -1291,6 +1323,191 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(197, Short.MAX_VALUE))
         );
 
+        jLabel69.setText("ID:");
+
+        jLabel70.setText("ID Partido:");
+
+        jLabel71.setText("Monto:");
+
+        jLabel72.setText("Goles Local:");
+
+        jLabel74.setText("Goles Visita:");
+
+        jButton19.setText("Crear");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout crear_prediccionLayout = new javax.swing.GroupLayout(crear_prediccion.getContentPane());
+        crear_prediccion.getContentPane().setLayout(crear_prediccionLayout);
+        crear_prediccionLayout.setHorizontalGroup(
+            crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_prediccionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(crear_prediccionLayout.createSequentialGroup()
+                        .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel72)
+                            .addComponent(jLabel69)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel71))
+                        .addGap(18, 18, 18)
+                        .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(monto_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(local_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(idpartido_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(crear_prediccionLayout.createSequentialGroup()
+                        .addComponent(jLabel74)
+                        .addGap(18, 18, 18)
+                        .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton19)
+                            .addComponent(visita_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+        crear_prediccionLayout.setVerticalGroup(
+            crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(crear_prediccionLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel69)
+                    .addComponent(id_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel70)
+                    .addComponent(idpartido_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel71)
+                    .addComponent(monto_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel72)
+                    .addComponent(local_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(crear_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel74)
+                    .addComponent(visita_crear_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton19)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        jLabel75.setText("ID:");
+
+        jLabel76.setText("ID Partido:");
+
+        jLabel77.setText("Monto:");
+
+        jLabel78.setText("Goles Local:");
+
+        jLabel79.setText("Goles Visita:");
+
+        jButton20.setText("Crear");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout modificar_prediccionLayout = new javax.swing.GroupLayout(modificar_prediccion.getContentPane());
+        modificar_prediccion.getContentPane().setLayout(modificar_prediccionLayout);
+        modificar_prediccionLayout.setHorizontalGroup(
+            modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_prediccionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(modificar_prediccionLayout.createSequentialGroup()
+                        .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel78)
+                            .addComponent(jLabel75)
+                            .addComponent(jLabel76)
+                            .addComponent(jLabel77))
+                        .addGap(18, 18, 18)
+                        .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(monto_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(local_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(idpartido_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(modificar_prediccionLayout.createSequentialGroup()
+                        .addComponent(jLabel79)
+                        .addGap(18, 18, 18)
+                        .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton20)
+                            .addComponent(visita_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+        modificar_prediccionLayout.setVerticalGroup(
+            modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(modificar_prediccionLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel75)
+                    .addComponent(id_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel76)
+                    .addComponent(idpartido_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel77)
+                    .addComponent(monto_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel78)
+                    .addComponent(local_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(modificar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel79)
+                    .addComponent(visita_modificar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton20)
+                .addContainerGap(70, Short.MAX_VALUE))
+        );
+
+        jLabel80.setText("ID:");
+
+        jButton21.setText("Eliminar");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
+
+        jLabel85.setText("Ingrese el ID de la prediccion que desea eliminar");
+
+        javax.swing.GroupLayout eliminar_prediccionLayout = new javax.swing.GroupLayout(eliminar_prediccion.getContentPane());
+        eliminar_prediccion.getContentPane().setLayout(eliminar_prediccionLayout);
+        eliminar_prediccionLayout.setHorizontalGroup(
+            eliminar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_prediccionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(eliminar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(eliminar_prediccionLayout.createSequentialGroup()
+                        .addComponent(jLabel80)
+                        .addGap(60, 60, 60)
+                        .addGroup(eliminar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton21)
+                            .addComponent(id_eliminar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel85))
+                .addContainerGap(159, Short.MAX_VALUE))
+        );
+        eliminar_prediccionLayout.setVerticalGroup(
+            eliminar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eliminar_prediccionLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel85)
+                .addGap(18, 18, 18)
+                .addGroup(eliminar_prediccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel80)
+                    .addComponent(id_eliminar_prediccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton21)
+                .addContainerGap(194, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu_Crear.setText("Crear");
@@ -1342,6 +1559,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Crear.add(jMenuItem_CrearQuiniela);
+
+        jMenuItem_CrearPrediccion.setText("Prediccion");
+        jMenuItem_CrearPrediccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_CrearPrediccionActionPerformed(evt);
+            }
+        });
+        jMenu_Crear.add(jMenuItem_CrearPrediccion);
 
         jMenuBar1.add(jMenu_Crear);
 
@@ -1395,6 +1620,14 @@ public class Main extends javax.swing.JFrame {
         });
         jMenu_Modificar.add(jMenuItem_ModificarQuiniela);
 
+        jMenuItem_ModificarPrediccion.setText("Prediccion");
+        jMenuItem_ModificarPrediccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ModificarPrediccionActionPerformed(evt);
+            }
+        });
+        jMenu_Modificar.add(jMenuItem_ModificarPrediccion);
+
         jMenuBar1.add(jMenu_Modificar);
 
         jMenu_Eliminar.setText("Eliminar");
@@ -1446,6 +1679,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
         jMenu_Eliminar.add(jMenuItem_EliminarQuiniela);
+
+        jMenuItem_EliminarPrediccion.setText("Prediccion");
+        jMenuItem_EliminarPrediccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarPrediccionActionPerformed(evt);
+            }
+        });
+        jMenu_Eliminar.add(jMenuItem_EliminarPrediccion);
 
         jMenuBar1.add(jMenu_Eliminar);
 
@@ -1811,6 +2052,66 @@ public class Main extends javax.swing.JFrame {
         id_eliminar_quiniela.setText("");
     }//GEN-LAST:event_jButton18ActionPerformed
 
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        String id,idpartido,monto,local,visita;
+        id = id_crear_prediccion.getText();
+        idpartido = idpartido_crear_prediccion.getText();
+        monto = monto_crear_prediccion.getText();
+        local = local_crear_prediccion.getText();
+        visita = visita_crear_prediccion.getText();
+        id_crear_prediccion.setText("");
+        idpartido_crear_prediccion.setText("");
+        monto_crear_prediccion.setText("");
+        local_crear_prediccion.setText("");
+        visita_crear_prediccion.setText("");
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+        String id,idpartido,monto,local,visita;
+        id = id_modificar_prediccion.getText();
+        idpartido = idpartido_modificar_prediccion.getText();
+        monto = monto_modificar_prediccion.getText();
+        local = local_modificar_prediccion.getText();
+        visita = visita_modificar_prediccion.getText();
+        id_modificar_prediccion.setText("");
+        idpartido_modificar_prediccion.setText("");
+        monto_modificar_prediccion.setText("");
+        local_modificar_prediccion.setText("");
+        visita_modificar_prediccion.setText("");
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        String id = id_eliminar_prediccion.getText();
+        id_eliminar_prediccion.setText("");
+    }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jMenuItem_CrearPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_CrearPrediccionActionPerformed
+        // TODO add your handling code here:
+        crear_prediccion.setModal(true);
+        crear_prediccion.pack();
+        crear_prediccion.setLocationRelativeTo(this);
+        crear_prediccion.setVisible(true);    
+    }//GEN-LAST:event_jMenuItem_CrearPrediccionActionPerformed
+
+    private void jMenuItem_ModificarPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ModificarPrediccionActionPerformed
+        // TODO add your handling code here:
+        modificar_prediccion.setModal(true);
+        modificar_prediccion.pack();
+        modificar_prediccion.setLocationRelativeTo(this);
+        modificar_prediccion.setVisible(true);    
+    }//GEN-LAST:event_jMenuItem_ModificarPrediccionActionPerformed
+
+    private void jMenuItem_EliminarPrediccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarPrediccionActionPerformed
+        // TODO add your handling code here:
+        eliminar_prediccion.setModal(true);
+        eliminar_prediccion.pack();
+        eliminar_prediccion.setLocationRelativeTo(this);
+        eliminar_prediccion.setVisible(true);    
+    }//GEN-LAST:event_jMenuItem_EliminarPrediccionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1852,12 +2153,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JDialog crear_entrenador;
     private javax.swing.JDialog crear_equipo;
     private javax.swing.JDialog crear_jugador;
+    private javax.swing.JDialog crear_prediccion;
     private javax.swing.JDialog crear_quiniela;
     private javax.swing.JDialog eliminar_arbitro;
     private javax.swing.JDialog eliminar_club;
     private javax.swing.JDialog eliminar_entrenador;
     private javax.swing.JDialog eliminar_equipo;
     private javax.swing.JDialog eliminar_jugador;
+    private javax.swing.JDialog eliminar_prediccion;
     private javax.swing.JDialog eliminar_quiniela;
     private javax.swing.JTextField fechanac_crear_arbitro;
     private javax.swing.JTextField fechanac_crear_entrenador;
@@ -1874,12 +2177,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_crear_entrenador;
     private javax.swing.JTextField id_crear_equipo;
     private javax.swing.JTextField id_crear_jugador;
+    private javax.swing.JTextField id_crear_prediccion;
     private javax.swing.JTextField id_crear_quiniela;
     private javax.swing.JTextField id_eliminar_arbitro;
     private javax.swing.JTextField id_eliminar_club;
     private javax.swing.JTextField id_eliminar_entrenador;
     private javax.swing.JTextField id_eliminar_equipo;
     private javax.swing.JTextField id_eliminar_jugador;
+    private javax.swing.JTextField id_eliminar_prediccion;
     private javax.swing.JTextField id_eliminar_quiniela;
     private javax.swing.JTextField id_entrenador_crear_equipo;
     private javax.swing.JTextField id_entrenador_modificar_equipo;
@@ -1888,7 +2193,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField id_modificar_entrenador;
     private javax.swing.JTextField id_modificar_equipo;
     private javax.swing.JTextField id_modificar_jugador;
+    private javax.swing.JTextField id_modificar_prediccion;
     private javax.swing.JTextField id_modificar_quiniela;
+    private javax.swing.JTextField idpartido_crear_prediccion;
+    private javax.swing.JTextField idpartido_modificar_prediccion;
     private javax.swing.JTextField inicio_crear_quiniela;
     private javax.swing.JTextField inicio_modificar_quiniela;
     private javax.swing.JTextField inversion_crear_quiniela;
@@ -1903,7 +2211,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1976,9 +2287,21 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem_CrearArbitro;
@@ -1986,29 +2309,37 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem_CrearEntrenador;
     private javax.swing.JMenuItem jMenuItem_CrearEquipo;
     private javax.swing.JMenuItem jMenuItem_CrearJugador;
+    private javax.swing.JMenuItem jMenuItem_CrearPrediccion;
     private javax.swing.JMenuItem jMenuItem_CrearQuiniela;
     private javax.swing.JMenuItem jMenuItem_EliminarArbitro;
     private javax.swing.JMenuItem jMenuItem_EliminarClub;
     private javax.swing.JMenuItem jMenuItem_EliminarEntrenador;
     private javax.swing.JMenuItem jMenuItem_EliminarEquipo;
     private javax.swing.JMenuItem jMenuItem_EliminarJugador;
+    private javax.swing.JMenuItem jMenuItem_EliminarPrediccion;
     private javax.swing.JMenuItem jMenuItem_EliminarQuiniela;
     private javax.swing.JMenuItem jMenuItem_ModificarArbitro;
     private javax.swing.JMenuItem jMenuItem_ModificarClub;
     private javax.swing.JMenuItem jMenuItem_ModificarEntrenador;
     private javax.swing.JMenuItem jMenuItem_ModificarEquipo;
     private javax.swing.JMenuItem jMenuItem_ModificarJugador;
+    private javax.swing.JMenuItem jMenuItem_ModificarPrediccion;
     private javax.swing.JMenuItem jMenuItem_ModificarQuiniela;
     private javax.swing.JMenu jMenu_Crear;
     private javax.swing.JMenu jMenu_Eliminar;
     private javax.swing.JMenu jMenu_Listar;
     private javax.swing.JMenu jMenu_Modificar;
+    private javax.swing.JTextField local_crear_prediccion;
+    private javax.swing.JTextField local_modificar_prediccion;
     private javax.swing.JDialog modificar_arbitro;
     private javax.swing.JDialog modificar_club;
     private javax.swing.JDialog modificar_entrenador;
     private javax.swing.JDialog modificar_equipo;
     private javax.swing.JDialog modificar_jugador;
+    private javax.swing.JDialog modificar_prediccion;
     private javax.swing.JDialog modificar_quiniela;
+    private javax.swing.JTextField monto_crear_prediccion;
+    private javax.swing.JTextField monto_modificar_prediccion;
     private javax.swing.JTextField nombre_crear_arbitro;
     private javax.swing.JTextField nombre_crear_club;
     private javax.swing.JTextField nombre_crear_entrenador;
@@ -2031,5 +2362,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField pesoextra_modificar_arbitro;
     private javax.swing.JTextField pesoextra_modificar_entrenador;
     private javax.swing.JTextField pesoextra_modificar_jugador;
+    private javax.swing.JTextField visita_crear_prediccion;
+    private javax.swing.JTextField visita_modificar_prediccion;
     // End of variables declaration//GEN-END:variables
 }
